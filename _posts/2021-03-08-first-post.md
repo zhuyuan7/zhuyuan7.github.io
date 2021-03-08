@@ -30,4 +30,4 @@ last_modified_at: {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 오늘도 "不怕慢, 只怕站"  정신!
 
 
-#{{ page.title }} {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
+{{ page.title }} {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
