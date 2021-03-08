@@ -1,5 +1,5 @@
 ---
-title:  "비전공자의 "그렇게 개발자가 된다.""
+title:  "비전공자의 '그렇게 개발자가 된다.'"
 excerpt:"zhuyuan7.github.io 블로그 시작하기."
 
 categories:
@@ -30,4 +30,4 @@ tags:
 오늘도 "不怕慢, 只怕站"  정신!
 
 
-#{{ page.title }} {{ page.last_modified_at }}
+#{{ page.title }} {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
