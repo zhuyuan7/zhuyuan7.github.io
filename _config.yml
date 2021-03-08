@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "그렇게 개발자가 된다."
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Joo - Evolution"
-description              : "Joo - Evolution."
+name                     : "Joo-Evolution"
+description              : "Joo-Evolution."
 url                      : "https://zhuyuan7.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -94,9 +94,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Joo
+  name             : "존버 반, 열정 반 인문학 개발자"
   avatar           : "/assets/images/JOO.jpg" #path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "그렇게 개발자가 된다."
+  bio              : "비전공자의 ‘그렇게 개발자가 된다.’"
   location         : "South Korea"
   email            : "jwjwchoi0910@gmail.com"
   links:
@@ -105,7 +105,7 @@ author:
       url: "jwjwchoi0910@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://zhuyuan7.github.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -114,7 +114,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://zhuyuan7.github.io/"
+      url: "https://github.com/zhuyuan7/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -128,9 +128,15 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "jwjwchoi0910@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://zhuyuan7.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://zhuyuan7.github.io/"
+      url: "https://github.com/zhuyuan7/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -280,3 +286,15 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+# _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
