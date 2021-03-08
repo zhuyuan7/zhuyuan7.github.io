@@ -102,7 +102,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "jwjwchoi0910@gmail.com"
+      #url: "jwjwchoi0910@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://zhuyuan7.github.io/"
