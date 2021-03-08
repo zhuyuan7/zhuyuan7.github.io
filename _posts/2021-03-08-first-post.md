@@ -1,12 +1,12 @@
 ---
 title:  "비전공자의 '그렇게 개발자가 된다.'"
-excerpt:"zhuyuan7.github.io 블로그 시작하기."
+excerpt: "zhuyuan7.github.io 블로그 시작하기."
 
 categories:
   - Blog
 tags:
   - Blog
-#last_modified_at: 2021-03-08T08:06:00-05:00
+last_modified_at: {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 ---
 
 중국 푸단대학교 신문학원에서 미디어관리를 전공하던 석사과정 기간동안 
