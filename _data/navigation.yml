@@ -6,3 +6,5 @@ main:
     url: /about/
   - title: "Posts"
     url: /blog/_posts
+  - title: "Project"
+    url: /project/
