@@ -7,7 +7,7 @@ author_profile: true
 
 ## 서울시 25개구 카페추천 웹사이트에 대한 포스팅.
 
-1.  [서울 카페 추천 웹사이트 만들기 - Prologue](https://zhuyuan7.github.io/blog/first-post/)
+1.  [서울 카페 추천 웹사이트 만들기 - Prologue](https://zhuyuan7.github.io/blog/making-cafe-web/)
 2.  [서울 카페 추천 웹사이트 만들기  - 카카오맥 카페 정보 스크롤링](https://zhuyuan7.github.io/blog/first-post/)
 3.  [서울 카페 추천 웹사이트 만들기  -  구글맵 카페 댓글 스크롤링](https://zhuyuan7.github.io/blog/first-post/)
 4.  [서울 카페 추천 웹사이트 만들기  -  카페 댓글에 대한 자연어 처리 OKT](https://zhuyuan7.github.io/blog/first-post/)
