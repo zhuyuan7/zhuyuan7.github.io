@@ -1,6 +1,8 @@
 # main links
 main:
-  - title: "블로그 방문하기"
+  - title: "Main"
     url: https://zhuyuan7.github.io/
   - title: "About"
     url: /about/
+  - title: "Posts"
+    url: /_posts/
