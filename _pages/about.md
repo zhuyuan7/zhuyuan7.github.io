@@ -2,6 +2,7 @@
 title: "이 블로그 설명서"
 permalink: /about/
 layout: single
+author_profile: true
 ---
 
 이 블로그는 Joo의 빅데이터부문 개발자가 되어가는 발자취를 남기는 공간으로써 지극히 개인적인
