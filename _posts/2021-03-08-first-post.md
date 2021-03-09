@@ -8,7 +8,7 @@ categories:
   - Blog
 tags:
   - Blog
-last_modified_at: {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
+#last_modified_at: {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 ---
 
 중국 푸단대학교 신문학원에서 미디어관리를 전공하던 석사과정 기간동안 
@@ -34,4 +34,4 @@ last_modified_at: {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 느린 것을 두려워하지 말고, 중도에서 그만두는 것을 두려워하라.
 
 
-{{ page.title }} {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
+#{{ page.title }} {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
