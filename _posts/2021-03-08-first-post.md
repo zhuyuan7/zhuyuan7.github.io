@@ -1,8 +1,8 @@
 ---
 title:  "비전공자의 '그렇게 개발자가 된다.'"
 excerpt: "zhuyuan7.github.io 블로그 시작하기."
-permalink: /_posts/
-author_profile: true
+#permalink: /_posts/
+#author_profile: true
 
 categories:
   - Blog
