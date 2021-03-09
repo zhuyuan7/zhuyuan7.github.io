@@ -8,7 +8,7 @@ main:
     url: /blog/_posts
   - title: "Project"
     url: /project/
- - title: "Categories"
-   url: /categories/
- - title: "Tags"
-   url: /tags/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
