@@ -1,7 +1,7 @@
 ---
 title:  "2. 서울 카페 추천 웹사이트 만들기 - 카카오맵 카페 정보 크롤링"
 excerpt: "카카오맵 이용 카페 정보 크롤링"
-permalink: "/blog/2021-03-10-making-cafe-web/"
+permalink: "/blog/making-cafe-web-02/"
 author_profile: true
 
 categories:
