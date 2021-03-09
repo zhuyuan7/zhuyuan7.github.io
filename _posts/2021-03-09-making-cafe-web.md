@@ -1,5 +1,5 @@
 ---
-title:  "(1) 서울 카페 추천 웹사이트 만들기 - Prologue"
+title:  " (1) 서울 카페 추천 웹사이트 만들기 - Prologue"
 excerpt: "고객 기호 맞춤 카페 추천 웹사이트"
 permalink: "/blog/making-cafe-web-01/"
 author_profile: true
