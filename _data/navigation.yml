@@ -4,8 +4,6 @@ main:
     url: https://zhuyuan7.github.io/
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /blog/
   - title: "Project"
     url: /project/
   - title: "Categories"
