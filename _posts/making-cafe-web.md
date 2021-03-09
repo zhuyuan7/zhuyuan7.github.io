@@ -1,6 +1,8 @@
 ---
 title:  "서울 카페 추천 웹사이트 만들기 - Prologue"
 excerpt: "고객 기호 맞춤 카페 추천 웹사이트"
+permalink: /blog/making-cafe-web/
+author_profile: true
 
 categories:
   - 카페 추천
@@ -10,7 +12,7 @@ tags:
   - 맞춤
   - 추천
   - 웹사이트
-{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
+#{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 ---
 2020년 6월 29일에 시작한 빅데이터에 대한 기초교육이 끝나고, 2020년 10월 23일부터 12월 29일까지 팀프로젝트를 수행하였다.
 
