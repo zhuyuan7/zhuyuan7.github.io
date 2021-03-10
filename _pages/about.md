@@ -3,6 +3,8 @@ title: "소개"
 permalink: /about/
 layout: single
 author_profile: true
+toc: true
+toc_sticky: true
 ---
 
 이 블로그는 Joo의 빅데이터부문 개발자가 되어가는 발자취를 남기는 공간으로써 지극히 개인적인
@@ -16,7 +18,9 @@ author_profile: true
 처음 다뤄보는 깃허브 블로그라 서툴고 어색할지라도 계속 사용하다 보면 익숙해져서 
 자유자재로 다룰 수 있는 경지에 오를 수 있도록 前进前进！！ 
 
+
 *****
+
 
 ## "비전공자의 '그렇게 개발자가 된다.'"
 *****
