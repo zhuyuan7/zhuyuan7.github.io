@@ -3,6 +3,12 @@ title:  " (1) 서울 카페 추천 웹페이지 만들기 - Prologue"
 excerpt: "고객 기호 맞춤 카페 추천 웹페이지"
 permalink: "/blog/making-cafe-web-01/"
 author_profile: true
+toc: true
+toc_sticky: true
+# toc_label: "페이지 주요 목차"  --toc의 기본값은 "on this page"
+header:
+  teaser: /assets/images/아이디어.jpg
+
 
 categories:
   - 카페 추천
