@@ -39,9 +39,12 @@ tags:
 아무래도 데이터가 많아야 더많은 정보를 제공할 수 있기 때문에 많으면 많을 수록 좋다는 
 생각으로 "정보의 양"이 카페정보 수집단계의 관건이라고 생각했다. 
 
-카페 정보 웹크롤링을 하기 위해, Selenium 프레임워크의 webdriver를 import하여 사용할 거기 때문에 크롬 환경에서
+카페 정보 웹크롤링을 하기 위해, Selenium 프레임워크의 webdriver를 사용할거기 때문에 크롬 환경에서
 네이버 지도, 카카오맵, 구글맵에서 제공하는 정보의 양을 조사하였다.
->Selenium은 주로 웹앱을 테스트하는데 이용하는 프레임워크다. webdriver라는 API를 통해 운영체제에 설치된 Chrome등의 브라우저를 제어하게 된다.
+> **Selenium**은 WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 지원합니다.  
+**WebDriver**는 웹 브라우저의 동작을 제어하기 위한 언어 중립 인터페이스를 정의하는 API와 프로토콜 입니다.
+출처: [selenium.dev] (https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)
+Selenium은 웹 애플리케이션 테스트를 위한 포터블 프레임워크이다. webdriver라는 API를 통해 운영체제에 설치된 Chrome등의 브라우저를 제어하게 된다.
 강남구에 카페가 유동인구가 제일 많기 때문에 "강남구 카페" 검색어로 검색한 결과 다음과 같은 결과를 도출했다.
 <br>
 ![포털지도선정](https://zhuyuan7.github.io/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
