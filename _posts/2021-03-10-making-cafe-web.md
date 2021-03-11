@@ -42,7 +42,7 @@ tags:
 <br>
 
 > **Selenium**은 WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 지원합니다.  
-**WebDriver**는 웹 브라우저의 동작을 제어하기 위한 언어 중립 인터페이스를 정의하는 API와 프로토콜 입니다.
+**WebDriver**는 웹 브라우저의 동작을 제어하기 위한 언어 중립 인터페이스를 정의하는 API와 프로토콜 입니다.  
 출처: [selenium.dev] (https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)
 <br>
 
