@@ -43,7 +43,7 @@ tags:
 
 > **Selenium**은 WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 지원합니다.  
 **WebDriver**는 웹 브라우저의 동작을 제어하기 위한 언어 중립 인터페이스를 정의하는 API와 프로토콜 입니다.  
-출처: [selenium.dev] (https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)
+출처: [selenium.dev](https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)
 <br>
 
 강남구에 카페가 유동인구가 제일 많기 때문에 "강남구 카페" 검색어로 검색한 결과 다음과 같은 결과를 도출했다.
