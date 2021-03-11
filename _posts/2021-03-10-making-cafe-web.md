@@ -44,7 +44,7 @@ tags:
 >Selenium은 주로 웹앱을 테스트하는데 이용하는 프레임워크다. webdriver라는 API를 통해 운영체제에 설치된 Chrome등의 브라우저를 제어하게 된다.
 강남구에 카페가 유동인구가 제일 많기 때문에 "강남구 카페" 검색어로 검색한 결과 다음과 같은 결과를 도출했다.
 <br>
-![포털지도선정](https://devinlife.com/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
+![포털지도선정](https://zhuyuan7.github.io/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
 <br>
 
 먼저, 카페의 정보를 수집하기 위해 카카오맵 API를 사용 시도를 해보았다. 하지만
