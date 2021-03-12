@@ -54,6 +54,7 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 **WebDriver**는 웹 브라우저의 동작을 제어하기 위한 언어 중립 인터페이스를 정의하는 API와 프로토콜 입니다.  
 + 출처: [selenium.dev](https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)
 <br>
+
 네이버, 카카오맵, 구글 중 카카오맵의 정보제공 양이 **총 510개**로 압도적으로 많은 양의 정보를 제공하기 때문에
 카카오맵 상에서 카페정보를 수집하기로 최종결정하였다.
 
