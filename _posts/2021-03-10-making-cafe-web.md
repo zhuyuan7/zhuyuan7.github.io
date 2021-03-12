@@ -28,7 +28,7 @@ tags:
 이 글에서는 카카오맵 상의 카페정보 크롤링 과정을 소개하였다.
 <br>
 <br>
-## 1. 카카오맵의 카페정보 수집
+## 1. 카페정보 수집대상 포털사이트 선정
 ### 1.1. 왜 카카오맵을 사용하여 카페 정보를 수집했는 가?
 
 한국인이 사용하는 대표적인 포털 사이트는 크게 네이버, 다음, 구글을 꼽을 수 있다.
@@ -57,9 +57,10 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 
 ![포털지도선정](https://zhuyuan7.github.io/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
 ##### <center> <그림 1> 네이버, 카카오맵, 구글의 검색 결과 </center>
-<br>
-##### <center> <표 1> 네이버, 카카오맵, 구글의 정보 제공 수 </center>
 
+
+
+##### <center> <표 1> 네이버, 카카오맵, 구글의 정보 제공 수 </center>
 |  |  1 | 2 | 3 |
 |:-:|:-:|:-:|:-:|
 | 포털 사이트 | 네이버 | 카카오맵 | 구글 |
@@ -67,27 +68,23 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 | 한 페이지 당 결과물 수 | 50 개 | 15 개 | 20 개 |
 | 총 정보 제공 수 | 총 300 개 | 총 **510** 개 | 총 300 개 |
 
-<br> 네이버, 카카오맵, 구글 중 카카오맵의 정보제공 양이 **총 510개**로 압도적으로 많은 양의 정보를 제공하기 때문에
+네이버, 카카오맵, 구글 중 카카오맵의 정보제공 양이 **총 510개**로 압도적으로 많은 양의 정보를 제공하기 때문에
 카카오맵 상에서 카페정보를 수집하기로 최종결정하였다.
 
 본래 계획은 카카오 REST API를 이용해 카페의 정보를 수집하기로 하였으나, 카카오 REST API를 사용하여
 정보수집을 시도해 보았지만, 최대 **45 page x 15 size**의 정보만을 제공하므로 정보제공 개수의 제한이 있어 방대한 양의 정보를 수집하기엔 적합하지 않다고
 판단하였다. 
-
-<br>
 ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오제한"){: .align-center}
-
-##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center>
-##### 출처: [kakao developers 약관]:(https://developers.kakao.com/terms/latest/ko/site-policies)
+##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 약관]:(https://developers.kakao.com/terms/latest/ko/site-policies)
 
 ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한그림.jpg "카카오제한"){: .align-center}
-
 ##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 
-##### 출처: [kakao developers 도구]:(https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-category.%7Bformat%7D)
-
-  
+출처: [kakao developers 도구]:(https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-category.%7Bformat%7D)
+<br>
 API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
-
+<br>
+<br>
+## 2. 카카오맵 상의 카페정보 수집
 셀레늄의 뷰티풀 숲을 이용하여 카카오맵에서 “강남구 카페”를 검색어로 설정하여 진행하였고, (카페이름, 주소, 영업일 등등)을 수집하였다. (<--- 파이썬 코드 첨부)
 25개 구의 카페정보를 수집하여 데이터를 확보하여, 확보한 데이터를 기반으로 구글맵에서“카페이름, 주소, 전화번호”를 검색어로 하여
 카페 댓글 데이터를 수집하였습니다.
