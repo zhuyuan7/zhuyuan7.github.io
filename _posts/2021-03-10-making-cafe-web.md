@@ -82,13 +82,14 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 판단하였다. 
 
 ![카카오제한](https://zhuyuan7.github.io/assets/images/수정카카오제한그림.jpg "카카오제한"){: .align-center}
-<center> <그림 3> 카카오 API 쿼터 및 제한 </center>
+#####<center> <그림 3> 카카오 API 쿼터 및 제한 </center>
 <br>
 
 API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
 <br>
 <br>
 
+----
 ## 2. 카카오맵 상의 카페정보 수집
 
 `Beautiful Soup`을 이용하여 카카오맵에서 서울시 25개 구(区）카페의 정보를 수집하였다.
