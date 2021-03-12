@@ -18,46 +18,7 @@ tags:
 #{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 ---
 
-## 2. 카카오맵 상의 카페정보 수집
 
-`Beautiful Soup`을 이용하여 카카오맵에서 서울시 25개 구(区）카페의 정보를 수집하였다.
- 
-```python
-# 25개구 for문으로 돌려서 카페 정보 크롤링하기
-
-import os
-from time import sleep
-import time
-import re
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.common.exceptions import ElementNotInteractableException
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.keys import Keys
-```
-<br>
->**Beautiful Soup이란?**  
-<br>
-**Beautiful Soup**은 HTML 및 XML 파일에서 데이터를 가져 오기위한 Python 라이브러리입니다. 
-자주 사용하는 파서와 함께 작동하여 구문 분석 트리를 탐색, 검색 및 수정하는 관용적 인 방법을 제공합니다. 일반적으로 프로그래머의 
-작업 시간 또는 며칠을 절약합니다.
-* 출처:[Beautiful Soup 4.9.0 documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-
-<br>
-### 2.1 서울 특별시 구 리스트 
-먼저  크롤링할 25개 구 카페의 검색어를  **"구 이름"+"카페"**<sup>(강남구카페)</sup> 으로 설정하였고, 
-for문을 사용하여 각 구의 카페 정보를 수집하기 위해서, 서울시 25개 구(gu_name）를 
-리스트(gu_list) 형태로 만들었다.
-
-```python
-gu_list = ['마포구','서대문구','은평구','종로구','중구','용산구','성동구','광진구',
-           '동대문구','성북구','강북구','도봉구','노원구','중랑구','강동구','송파구',
-           '강남구','서초구','관악구','동작구','영등포구','금천구','구로구','양천구',
-           '강서구']
-
-```
-
-<br>
 
 ### 2.2 "카페명" + "주소" + "영업시간" + "전화번호" + "대표사진주소" 수집
 
