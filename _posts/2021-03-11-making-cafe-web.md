@@ -27,6 +27,34 @@ tags:
 -----
 
 <br>
+## 2. 카카오맵 상의 카페정보 수집
+
+`Beautiful Soup`을 이용하여 카카오맵에서 서울시 25개 구(区）카페의 정보를 수집하였다.
+ 
+```python
+# 25개구 for문으로 돌려서 카페 정보 크롤링하기
+
+import os
+from time import sleep
+import time
+import re
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.common.exceptions import ElementNotInteractableException
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
+```
+<br>
+>**Beautiful Soup이란?**  
+  **Beautiful Soup**은 HTML 및 XML 파일에서 데이터를 가져 오기위한 Python 라이브러리입니다. 
+  자주 사용하는 파서와 함께 작동하여 구문 분석 트리를 탐색, 검색 및 수정하는 관용적 인 방법을 제공합니다. 일반적으로 프로그래머의 
+  작업 시간 또는 며칠을 절약합니다.
+  * 출처:[Beautiful Soup 4.9.0 documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+
+
+
+
 
 ### 2.1 서울 특별시 구 리스트 
 
