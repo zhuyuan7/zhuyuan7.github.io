@@ -76,10 +76,12 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 
 <br>
 ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오제한"){: .align-center}
+
 ##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center>
 ##### 출처: [kakao developers 약관]:(https://developers.kakao.com/terms/latest/ko/site-policies)
 
 ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한그림.jpg "카카오제한"){: .align-center}
+
 ##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 
 ##### 출처: [kakao developers 도구]:(https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-category.%7Bformat%7D)
 
