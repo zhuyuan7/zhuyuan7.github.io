@@ -19,6 +19,7 @@ tags:
   - 크롤링
   - 정보
   - Selenium
+  - REST API
 #{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 ---
 <br>
@@ -39,12 +40,13 @@ tags:
 
 각 포털 사이트의 지도 서비스가 제공하는 카페 정보의 양이 각기 다르기 때문에, 각 포털 사이트의 지도 서비스에서
 특정 검색어를 검색하여 "정보의 양"을 비교해보기로 했다.대표적으로 유동인구가 많은 강남구의 카페를 예시로 검색어를 설정(검색어: **강남구 카페**)하여 다음과 같은 결과를 도출했다.
+<br>
 
 ![포털지도선정](https://zhuyuan7.github.io/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
 <center> <그림 1> 네이버, 카카오맵, 구글의 검색 결과 </center>
 <br>
 <br>
-Selenium 프레임워크의 webdriver를 이용하여 카페 정보 웹크롤링을 진행하기 위해 크롬 환경에서
+`Selenium` 프레임워크의 `WebDriver`를 이용하여 카페 정보 웹크롤링을 진행하기 위해 크롬 환경에서
 네이버 지도, 카카오맵, 구글맵이 제공하는 정보의 양을 조사하였다.
 <br>
 
@@ -52,7 +54,7 @@ Selenium 프레임워크의 webdriver를 이용하여 카페 정보 웹크롤링
 **Selenium**은  웹브라우저를 자동화할 수 있게 돕는 일련의 도구 모음인 엄브렐라 프로젝트(umbrella project) 중 일부이며,
 WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 지원합니다.  
 **WebDriver**는 웹 브라우저의 동작을 제어하기 위한 언어 중립 인터페이스를 정의하는 API와 프로토콜 입니다.  
-*출처: [selenium.dev](https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)
+* 출처: [selenium.dev](https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)
 <br>
 
 네이버, 카카오맵, 구글 중 카카오맵의 정보제공 양이 **총 510개**로 압도적으로 많은 양의 정보를 제공하기 때문에
@@ -82,16 +84,50 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 ![카카오제한](https://zhuyuan7.github.io/assets/images/수정카카오제한그림.jpg "카카오제한"){: .align-center}
 <center> <그림 3> 카카오 API 쿼터 및 제한 </center>
 <br>
+
 API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
 <br>
 <br>
 
 ## 2. 카카오맵 상의 카페정보 수집
 
-셀레늄의 뷰티풀 숲을 이용하여 카카오맵에서 “강남구 카페”를 검색어로 설정하여 진행하였고, (카페이름, 주소, 영업일 등등)을 수집하였다. (<--- 파이썬 코드 첨부)
+`Beautiful Soup`을 이용하여 카카오맵에서 서울시 25개 구(区）카페의 정보를 수집하였다.
+ 
+```python
+# 25개구 for문으로 돌려서 카페 정보 크롤링하기
+
+import os
+from time import sleep
+import time
+import re
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.common.exceptions import ElementNotInteractableException
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
+```
+<br>
+>**Beautiful Soup이란?**
+**Beautiful Soup**은 HTML 및 XML 파일에서 데이터를 가져 오기위한 Python 라이브러리입니다. 
+자주 사용하는 파서와 함께 작동하여 구문 분석 트리를 탐색, 검색 및 수정하는 관용적 인 방법을 제공합니다. 일반적으로 프로그래머의 
+작업 시간 또는 며칠을 절약합니다.
+* 출처:[Beautiful Soup 4.9.0 documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+
+*** 카페정보 : "카페명" + "주소" + "영업시간" + "전화번호" + "대표사진주소"
+
+먼저 크롤링할 검색어는  **"구 이름"+"카페"**(*예:"강남구"+"카페"*) 으로 하여 각 구의 카페 정보를 수집하기 위해,
+
+
+서울시 25개 구(区）리스트를 리스트로 만들어,  검색어로 설정하여 진행하였고, (카페이름, 주소, 영업일 등등)을 수집하였다. (<--- 파이썬 코드 첨부)
 25개 구의 카페정보를 수집하여 데이터를 확보하여, 확보한 데이터를 기반으로 구글맵에서“카페이름, 주소, 전화번호”를 검색어로 하여
 카페 댓글 데이터를 수집하였습니다.
 
+>**Beautiful Soup이란?**
+**Beautiful Soup**은 HTML 및 XML 파일에서 데이터를 가져 오기위한 Python 라이브러리입니다. 
+자주 사용하는 파서와 함께 작동하여 구문 분석 트리를 탐색, 검색 및 수정하는 관용적 인 방법을 제공합니다. 일반적으로 프로그래머의 
+작업 시간 또는 며칠을 절약합니다.
+* 출처:[Beautiful Soup 4.9.0 documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 
 
@@ -123,8 +159,8 @@ for index, gu_name in enumerate(gu_list):
     file = open(fileName, 'w', encoding='utf-8')
     file.write("카페명" + "|" + "주소" + "|" + "영업시간" + "|" + "전화번호" + "|" + "대표사진주소" + "\n")
     file.close()                                    # 처음에 csv파일에 칼럼명 만들어주기
+    
     options = webdriver.ChromeOptions()
-
     # options.add_argument('headless')
     options.add_argument("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36   ")
     options.add_argument('lang=ko_KR')
