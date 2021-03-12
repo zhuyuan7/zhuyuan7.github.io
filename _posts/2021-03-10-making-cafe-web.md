@@ -58,7 +58,6 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 ![포털지도선정](https://zhuyuan7.github.io/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
 ##### <center> <그림 1> 네이버, 카카오맵, 구글의 검색 결과 </center>
 <br>
-
 ##### <center> <표 1> 네이버, 카카오맵, 구글의 정보 제공 수 </center>
 
 |  |  1 | 2 | 3 |
@@ -77,8 +76,8 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 <br>
 <br>
 ![카카오api제한1](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오api제한1"){: .align-center}
-
-![카카오api제한2](https://zhuyuan7.github.io/assets/images/카카오api.jpg "카카오api제한2"){: .align-center}
+##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 출처: kakao developers https://developers.kakao.com/terms/latest/ko/site-policies
+![카카오api제한2](https://zhuyuan7.github.io/assets/images/카카오제한그림.jpg "카카오api제한2"){: .align-center}
 <br>
 
 API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
