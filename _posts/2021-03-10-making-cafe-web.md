@@ -114,7 +114,8 @@ from selenium.webdriver.common.keys import Keys
 * 출처:[Beautiful Soup 4.9.0 documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 
-*** 카페정보 : "카페명" + "주소" + "영업시간" + "전화번호" + "대표사진주소"
+----
+    카페정보 : "카페명" + "주소" + "영업시간" + "전화번호" + "대표사진주소"
 
 먼저 크롤링할 검색어는  **"구 이름"+"카페"**(*예:"강남구"+"카페"*) 으로 하여 각 구의 카페 정보를 수집하기 위해,
 
