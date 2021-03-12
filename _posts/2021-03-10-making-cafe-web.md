@@ -39,8 +39,8 @@ tags:
   각 포털 사이트의 지도 서비스가 제공하는 카페 정보의 양이 각기 다르기 때문에, 각 포털 사이트의 지도 서비스에서
   특정 검색어를 검색하여 "정보의 양"을 비교해보기로 했다.대표적으로 유동인구가 많은 강남구의 카페를 예시로 검색어를 설정(검색어: **강남구 카페**)하여 다음과 같은 결과를 도출했다.
 
-  ![포털지도선정](https://zhuyuan7.github.io/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
-   #####<center> <그림 1> 네이버, 카카오맵, 구글의 검색 결과 </center>
+    ![포털지도선정](https://zhuyuan7.github.io/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
+    #####<center> <그림 1> 네이버, 카카오맵, 구글의 검색 결과 </center>
 
   Selenium 프레임워크의 webdriver를 이용하여 카페 정보 웹크롤링을 진행하기 위해 크롬 환경에서
   네이버 지도, 카카오맵, 구글맵이 제공하는 정보의 양을 조사하였다.
@@ -55,29 +55,29 @@ tags:
   네이버, 카카오맵, 구글 중 카카오맵의 정보제공 양이 **총 510개**로 압도적으로 많은 양의 정보를 제공하기 때문에
   카카오맵 상에서 카페정보를 수집하기로 최종결정하였다.
 
-   ##### <center> <표 1> 네이버, 카카오맵, 구글의 정보 제공 수 </center>
+     ##### <center> <표 1> 네이버, 카카오맵, 구글의 정보 제공 수 </center>
 
-  |  |  1 | 2 | 3 |
-  |:-:|:-:|:-:|:-:|
-  | 포털 사이트 | 네이버 | 카카오맵 | 구글 |
-  | 총 페이지 수 | 6 페이지 | 34 페이지 | 15 페이지 |
-  | 한 페이지 당 결과물 수 | 50 개 | 15 개 | 20 개 |
-  | 총 정보 제공 수 | 총 300 개 | 총 **510** 개 | 총 300 개 |
+    |  |  1 | 2 | 3 |
+    |:-:|:-:|:-:|:-:|
+    | 포털 사이트 | 네이버 | 카카오맵 | 구글 |
+    | 총 페이지 수 | 6 페이지 | 34 페이지 | 15 페이지 |
+    | 한 페이지 당 결과물 수 | 50 개 | 15 개 | 20 개 |
+    | 총 정보 제공 수 | 총 300 개 | 총 **510** 개 | 총 300 개 |
 
 
   <br>
   본래 계획은 **[Kakao Developers> REST API](https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-keyword.%7Bformat%7D)**를 이용해 카페의 정보를 수집하기로 하였으나, 서비스 사용에 대한 한도제한의 문제가 발생하였다.
 
-  ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오제한"){: .align-center}
-   ##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 약관](https://developers.kakao.com/terms/latest/ko/site-policies)
-  <br>
+    ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오제한"){: .align-center}
+    ##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 약관](https://developers.kakao.com/terms/latest/ko/site-policies)
+    <br>
 
   카카오 REST API를 사용하여 정보수집을 시도해 보았지만, 최대 **45 page x 15 size**의 정보만을 제공하므로 정보제공 개수의 제한이 있어 방대한 양의 정보를 수집하기엔 적합하지 않다고
   판단하였다. 
 
-  ![카카오제한](https://zhuyuan7.github.io/assets/images/수정카카오제한그림.jpg "카카오제한"){: .align-center}
-   ##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 
-  <br>
+    ![카카오제한](https://zhuyuan7.github.io/assets/images/수정카카오제한그림.jpg "카카오제한"){: .align-center}
+    ##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 
+    <br>
   API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
   <br>
 
