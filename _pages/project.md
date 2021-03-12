@@ -17,8 +17,8 @@ toc_sticky: true
 ## 서울시 25개구 카페추천 웹페이지 만들기
 
 1.  [서울 카페 추천 웹페이지 만들기 - Prologue](https://zhuyuan7.github.io/blog/making-cafe-web-01/)
-2.  [서울 카페 추천 웹페이지 만들기  - 카카오맵 카페 정보 웹크롤링](https://zhuyuan7.github.io/blog/making-cafe-web-02/)
-3.  [서울 카페 추천 웹페이지 만들기  -  구글맵 카페 댓글 웹크롤링](https://zhuyuan7.github.io/blog/making-cafe-web-03/)
+2.  [서울 카페 추천 웹페이지 만들기  - 카카오맵 카페 정보 웹크롤링-1](https://zhuyuan7.github.io/blog/making-cafe-web-02/)
+3.  [서울 카페 추천 웹페이지 만들기  -  카카오맵 카페 정보 웹크롤링-2](https://zhuyuan7.github.io/blog/making-cafe-web-03/)
 4.  [서울 카페 추천 웹페이지 만들기  -  카페 댓글에 대한 자연어 처리 OKT](https://zhuyuan7.github.io/blog/making-cafe-web-04/)
 5.  [서울 카페 추천 웹페이지 만들기  -  결과값에 대한 카페 요소 분석 및 고객 취향 분류](https://zhuyuan7.github.io/blog/making-cafe-web-05//)
 6.  [서울 카페 추천 웹페이지 만들기  -  Django 이용](https://zhuyuan7.github.io/blog/making-cafe-web-06/)
