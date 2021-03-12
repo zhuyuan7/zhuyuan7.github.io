@@ -1,5 +1,5 @@
 ---
-title:  "(3) 서울 카페 추천 웹사이트 만들기 - 구글맵 카페 댓글"
+title:  "(3) 서울 카페 추천 웹사이트 만들기 - 카카오맵 카페 정보 크롤링-2"
 excerpt: "구글맵 이용 카페 댓글 크롤링"
 permalink: "/blog/making-cafe-web-03/"
 author_profile: true
