@@ -60,12 +60,14 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 <br>
 ##### <center> <표 1> 네이버, 카카오맵, 구글의 정보 제공 수 </center>
 
+<center>
 |  |  1 | 2 | 3 |
 |:-:|:-:|:-:|:-:|
 | 포털 사이트 | 네이버 | 카카오맵 | 구글 |
 | 총 페이지 수 | 6 페이지 | 34 페이지 | 15 페이지 |
 | 한 페이지 당 결과물 수 | 50 개 | 15 개 | 20 개 |
 | 총 정보 제공 수 | 총 300 개 | 총 **510** 개 | 총 300 개 |
+</center>
 
 <br> 네이버, 카카오맵, 구글 중 카카오맵의 정보제공 양이 **총 510개**로 압도적으로 많은 양의 정보를 제공하기 때문에
 카카오맵 상에서 카페정보를 수집하기로 최종결정하였다.
@@ -77,6 +79,7 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 <br>
 ![카카오api제한1](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오api제한1"){: .align-center}
 ##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 약관]:(https://developers.kakao.com/terms/latest/ko/site-policies)
+
 ![카카오api제한2](https://zhuyuan7.github.io/assets/images/카카오제한그림.jpg "카카오api제한2"){: .align-center}
 ##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 도구]:(https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-category.%7Bformat%7D)
 <br>
