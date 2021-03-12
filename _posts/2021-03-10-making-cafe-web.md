@@ -102,7 +102,6 @@ from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
-from bs4 import BeautifulSoup
 
 ##########################################################################
 ##################### variable related selenium ##########################
