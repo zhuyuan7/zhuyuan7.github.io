@@ -74,12 +74,12 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 본래 계획은 카카오 REST API를 이용해 카페의 정보를 수집하기로 하였으나, 카카오 REST API를 사용하여
 정보수집을 시도해 보았지만, 최대 **45 page x 15 size**의 정보만을 제공하므로 정보제공 개수의 제한이 있어 방대한 양의 정보를 수집하기엔 적합하지 않다고
 판단하였다. 
+
 ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오제한"){: .align-center}
-##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 약관]:(https://developers.kakao.com/terms/latest/ko/site-policies)
+#####<center> <그림 2> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 약관](https://developers.kakao.com/terms/latest/ko/site-policies)
 
 ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한그림.jpg "카카오제한"){: .align-center}
-##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 
-출처: [kakao developers 도구]:(https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-category.%7Bformat%7D)
+#####<center> <그림 3> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 도구](https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-category.%7Bformat%7D)
 <br>
 API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
 <br>
