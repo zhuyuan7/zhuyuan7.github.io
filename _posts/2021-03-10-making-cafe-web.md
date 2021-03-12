@@ -77,7 +77,7 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 
 출처: [kakao developers 약관](https://developers.kakao.com/terms/latest/ko/site-policies)
 <br>
-
+<br>
 카카오 REST API를 사용하여 정보수집을 시도해 보았지만, 최대 **45 page x 15 size**의 정보만을 제공하므로 정보제공 개수의 제한이 있어 방대한 양의 정보를 수집하기엔 적합하지 않다고
 판단하였다. 
 
@@ -107,7 +107,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 ```
 <br>
->**Beautiful Soup이란?**
+>**Beautiful Soup이란?**  
 **Beautiful Soup**은 HTML 및 XML 파일에서 데이터를 가져 오기위한 Python 라이브러리입니다. 
 자주 사용하는 파서와 함께 작동하여 구문 분석 트리를 탐색, 검색 및 수정하는 관용적 인 방법을 제공합니다. 일반적으로 프로그래머의 
 작업 시간 또는 며칠을 절약합니다.
@@ -123,11 +123,6 @@ from selenium.webdriver.common.keys import Keys
 25개 구의 카페정보를 수집하여 데이터를 확보하여, 확보한 데이터를 기반으로 구글맵에서“카페이름, 주소, 전화번호”를 검색어로 하여
 카페 댓글 데이터를 수집하였습니다.
 
->**Beautiful Soup이란?**
-**Beautiful Soup**은 HTML 및 XML 파일에서 데이터를 가져 오기위한 Python 라이브러리입니다. 
-자주 사용하는 파서와 함께 작동하여 구문 분석 트리를 탐색, 검색 및 수정하는 관용적 인 방법을 제공합니다. 일반적으로 프로그래머의 
-작업 시간 또는 며칠을 절약합니다.
-* 출처:[Beautiful Soup 4.9.0 documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 
 
