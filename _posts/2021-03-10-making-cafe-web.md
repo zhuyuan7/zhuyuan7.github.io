@@ -68,7 +68,7 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 
 
 <br>
-본래 계획은 **Kakao Developers> REST API**를 이용해 카페의 정보를 수집하기로 하였으나, 서비스 사용에 대한 한도제한의 문제가 발생하였다.
+본래 계획은 **[Kakao Developers> REST API](https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-keyword.%7Bformat%7D)**를 이용해 카페의 정보를 수집하기로 하였으나, 서비스 사용에 대한 한도제한의 문제가 발생하였다.
 
 ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오제한"){: .align-center}
 ##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 약관](https://developers.kakao.com/terms/latest/ko/site-policies)
@@ -78,7 +78,7 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 판단하였다. 
 
 ![카카오제한](https://zhuyuan7.github.io/assets/images/수정카카오제한그림.jpg "카카오제한"){: .align-center}
-##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 출처: [kakao developers 도구](https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-keyword.%7Bformat%7D)
+##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 
 <br>
 API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
 <br>
