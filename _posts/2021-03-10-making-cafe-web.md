@@ -72,20 +72,20 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 <br> 네이버, 카카오맵, 구글 중 카카오맵의 정보제공 양이 **총 510개**로 압도적으로 많은 양의 정보를 제공하기 때문에
 카카오맵 상에서 카페정보를 수집하기로 최종결정하였다.
 
-<br>본래 계획은 카카오 REST API를 이용해 카페의 정보를 수집하기로 하였으나, 카카오 REST API를 사용하여
+본래 계획은 카카오 REST API를 이용해 카페의 정보를 수집하기로 하였으나, 카카오 REST API를 사용하여
 정보수집을 시도해 보았지만, 최대 **45 page x 15 size**의 정보만을 제공하므로 정보제공 개수의 제한이 있어 방대한 양의 정보를 수집하기엔 적합하지 않다고
 판단하였다. 
+
 <br>
-<br>
-![카카오api제한1](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오api제한1"){: .align-center}
+![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오제한"){: .align-center}
 ##### <center> <그림 2> 카카오 API 쿼터 및 제한 </center>
-#####출처: [kakao developers 약관]:(https://developers.kakao.com/terms/latest/ko/site-policies)
+##### 출처: [kakao developers 약관]:(https://developers.kakao.com/terms/latest/ko/site-policies)
 
-![카카오api제한2](https://zhuyuan7.github.io/assets/images/카카오제한그림.jpg "카카오api제한2"){: .align-center}
+![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한그림.jpg "카카오제한"){: .align-center}
 ##### <center> <그림 3> 카카오 API 쿼터 및 제한 </center> 
-#####출처: [kakao developers 도구]:(https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-category.%7Bformat%7D)
-<br>
+##### 출처: [kakao developers 도구]:(https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-category.%7Bformat%7D)
 
+  
 API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
 
 셀레늄의 뷰티풀 숲을 이용하여 카카오맵에서 “강남구 카페”를 검색어로 설정하여 진행하였고, (카페이름, 주소, 영업일 등등)을 수집하였다. (<--- 파이썬 코드 첨부)
