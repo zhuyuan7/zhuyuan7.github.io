@@ -30,7 +30,7 @@ tags:
 <br>
 
 ## 1. 카페정보 수집대상 포털사이트 선정
-###1.1. 왜 카카오맵을 사용하여 카페 정보를 수집했는 가?
+### 1.1. 왜 카카오맵을 사용하여 카페 정보를 수집했는 가?
 한국인이 사용하는 대표적인 포털 사이트는 크게 네이버, 다음, 구글을 꼽을 수 있다.
 
 카페정보 수집에 들어가기에 앞서, 수집대상 포털사이트 선정요건으로 **"정보의 양"**에 무게를 두었다.
@@ -42,7 +42,8 @@ tags:
 
 ![포털지도선정](https://zhuyuan7.github.io/assets/images/포털지도선정.jpg "포털지도선정"){: .align-center}
 <center> <그림 1> 네이버, 카카오맵, 구글의 검색 결과 </center>
-
+<br>
+<br>
 Selenium 프레임워크의 webdriver를 이용하여 카페 정보 웹크롤링을 진행하기 위해 크롬 환경에서
 네이버 지도, 카카오맵, 구글맵이 제공하는 정보의 양을 조사하였다.
 <br>
@@ -51,7 +52,7 @@ Selenium 프레임워크의 webdriver를 이용하여 카페 정보 웹크롤링
 **Selenium**은  웹브라우저를 자동화할 수 있게 돕는 일련의 도구 모음인 엄브렐라 프로젝트(umbrella project) 중 일부이며,
 WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 지원합니다.  
 **WebDriver**는 웹 브라우저의 동작을 제어하기 위한 언어 중립 인터페이스를 정의하는 API와 프로토콜 입니다.  
-<div style="text-align: right"> 출처: [selenium.dev](https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)</div>
+*출처: [selenium.dev](https://www.selenium.dev/documentation/ko/getting_started_with_webdriver/)
 <br>
 
 네이버, 카카오맵, 구글 중 카카오맵의 정보제공 양이 **총 510개**로 압도적으로 많은 양의 정보를 제공하기 때문에
@@ -66,13 +67,13 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 | 한 페이지 당 결과물 수 | 50 개 | 15 개 | 20 개 |
 | 총 정보 제공 수 | 총 300 개 | 총 **510** 개 | 총 300 개 |
 
-
+<br>
 <br>
 본래 계획은 **[Kakao Developers> REST API](https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-keyword.%7Bformat%7D)**를 이용해 카페의 정보를 수집하기로 하였으나, 서비스 사용에 대한 한도제한의 문제가 발생하였다.
 
 ![카카오제한](https://zhuyuan7.github.io/assets/images/카카오제한.jpg "카카오제한"){: .align-center}
 <center> <그림 2> 카카오 API 쿼터 및 제한 </center> 
-<div style="text-align: right">출처: [kakao developers 약관](https://developers.kakao.com/terms/latest/ko/site-policies)</div>
+출처: [kakao developers 약관](https://developers.kakao.com/terms/latest/ko/site-policies)
 <br>
 
 카카오 REST API를 사용하여 정보수집을 시도해 보았지만, 최대 **45 page x 15 size**의 정보만을 제공하므로 정보제공 개수의 제한이 있어 방대한 양의 정보를 수집하기엔 적합하지 않다고
@@ -83,7 +84,7 @@ WebDriver의 사용을 통해 대부분의 모든 브라우저의 자동화를 �
 <br>
 API 사용제한 문제을 해결하는 방법으로 직접 코드를 작성하여 크롤링을 진행하였다.
 <br>
-
+<br>
 
 ## 2. 카카오맵 상의 카페정보 수집
 
