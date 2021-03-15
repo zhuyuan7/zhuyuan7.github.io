@@ -193,7 +193,7 @@ def get_store_review_data(driver, cafe_info):
 
 
 
-<br>
+
 ### 2.5. 카페후기 수집 코드
 
 서울특별시 25개 구의 카페 이용후기 수집 코드는 다음과 같다.
