@@ -1,20 +1,21 @@
 ---
-title:  "(3) 서울 카페 추천 웹사이트 만들기 - 구글맵 카페 댓글 크롤링"
-excerpt: "구글맵 이용 카페 댓글 크롤링"
-permalink: "/blog/making-cafe-web-03/"
+title:  "(4) 서울 카페 추천 웹사이트 만들기 - 카페 이용후기에 대한 자연어 처리 Okt"
+excerpt: "Okt 이용 카페 이용후기 빈도수 분석"
+permalink: "/blog/making-cafe-web-04/"
 author_profile: true
 toc: true
 toc_sticky: true
 # toc_label: "페이지 주요 목차"  --toc의 기본값은 "on this page"
+
 categories:
   - 카페 추천
-  - 크롤링
+  - 자연어 처리
 tags:
   - 카페 
   - 맞춤
   - 추천
   - 웹사이트
-  - 구글맵
+  - 자연어 처리
   - 크롤링
   - 정보
 #{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
