@@ -81,7 +81,7 @@ tags:
 
 ### 3.2. **텍스트 마이닝 4단계 절차**  
  - 1단계 : 텍스트 수집 (crawling, scrapping)
- - 2단계 : 텍스트 정제 (natural language processiong)
+ - 2단계 : 텍스트 정제 (Natural Language Processing)
  - 3단계 : 텍스트 분석 ( word cloud & TF-IDF, SNA, cluster analysis,topic modeling, word embedding, sentiment analysis)
  - 4단계 : 평가 및 적용 (data visualization, dashboard)
      - 출처 : 윤태일, 이수안, 『파이썬으로 텍스트 분석하기』, 늘봄(2018), 23.
@@ -98,7 +98,7 @@ tags:
 
 
 1. 텍스트 마이닝 1단계: 데이터 수집 (크롤링) 
-2. 텍스트 마이닝 2단계 데이터 정제 (자연어처리)
+2. 텍스트 마이닝 2단계 데이터 정제 (자연어 처리)
 3. 텍스트 마이닝 3단계 : 빈도수 데이터를 분석 (워드카운터)
 4. 텍스트 마이닝 4단계 : 10가지 카페테마를 지정  
 위와 같이 **데이터 수집, 정제, 분석 과정**의 텍스트 마이닝을 적용해 카페 데이터를 확보했다.  
