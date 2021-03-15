@@ -42,7 +42,7 @@ tags:
 
 
 <br>
-###1.1. 자연어 처리 (Natural Language Processing)
+### 1.1. 자연어 처리 (Natural Language Processing)
 
 앞서 진행했던 **카카오맵 상의 카페정보 수집**과 **구글맵 상의 카페이용후기 수집**과정을 거쳐 
 서울특별시 25개 구의 카페 추천 웹페이지를 만들기 위한 데이터들을 확보하였다.
