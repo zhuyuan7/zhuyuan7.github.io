@@ -24,29 +24,48 @@ tags:
 
 **2020-10-21**부터 **2020-12-28**까지 진행했던 **[서울시 25개구 카페추천 웹페이지 만들기](https://zhuyuan7.github.io/project/)** 팀프로젝트 개발에 대한 포스팅이다.
 
-이 글에서는 구글맵 상의 카페정보 데이터 크롤링 과정 을 소개한다.
+이 글에서는 구글맵 상의 카페 이용후기 데이터 크롤링 과정 을 소개한다.
 <br>
 
 -----
 
 <br>
-## 2. 카카오맵 상의 카페정보 수집
+## 1. 구글맵 상의 카페 이용후기 수집
 
-`Beautiful Soup`을 이용하여 카카오맵에서 서울시 25개 구(区）카페의 정보를 수집하였다.
+카카오맵에서 확보한 12,000건에 대한 카페정보 데이터를 활용해 
+구글맵에서 카페 이용 후기들을 수집하였다.
+
+### 1.1 왜 굳이 카카오맵이 아닌 구글맵에서 이용후기를 수집했는가?
+카카오맵에서 카페정보를 수집하고 수집된 카페들의 후기를 수집해보았는 데,
+후기 데이터의 양도 적을 뿐더러, 댓글의 내용이 너무 짧고 구체적이지 않아 
+카페 특색을 추출하기엔 부적합하다고 판단하였다. 
+또한 네이버 지도는 데이터의 양은 많지만, 카카오맵과 같은 이유로 제외시켰다.
+
+반면에 구글맵은 데이터의 양도 많고, 댓글의 내용도 구체적이라
+댓글을 통해 카페 특색을 보다 정확하게 추출할 수 있어서 구글맵에서 
+카페 후기 정보를 수집하기로 최종 결정하였다.
+
+<br>
+
+![카페후기](https://zhuyuan7.github.io/assets/images/카페후기.jpg "카페후기"){: .align-center}
+<center> <그림 1> 구글맵, 카카오맵, 네이버 지도 이용 후기 </center>
+
+<br>
+### 1. 2 구글맵 API 사용제한
+
+앞서 살펴본 카카오맵 REST API 사용시 사용제한이 있는 것과 같이, 
+[Google Maps Platform](https://developers.google.com/maps/faq#usage_apis) 에서도 
+API 사용 제한이 있어 보다 원활한 정보 수집을 위해 직접 코드를 작성하여 웹크롤링을 진행하였다.
+
+
+![구글제한](https://zhuyuan7.github.io/assets/images/구글제한.jpg "구글제한"){: .align-center}
+<center> <그림 2> 구글맵 API 사용제한 </center>
+
+
+
+
  
-```python
-# 25개구 for문으로 돌려서 카페 정보 크롤링하기
 
-import os
-from time import sleep
-import time
-import re
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.common.exceptions import ElementNotInteractableException
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.keys import Keys
-```
 <br>
 >**Beautiful Soup이란?**  
  **Beautiful Soup**은 HTML 및 XML 파일에서 데이터를 가져 오기위한 Python 라이브러리입니다. 
@@ -110,135 +129,3 @@ gu_list = ['마포구','서대문구','은평구','종로구','중구','용산�
 
 ![카페정보데이터](https://zhuyuan7.github.io/assets/images/카페정보데이터.jpg "카페정보데이터"){: .align-center}<center> <그림 4> 서울시 25개 구 카페정보 수집 결과물 </center>
 
-
-<br>
-### 2.4 카페 정보 수집 코드
-
-```python
-# 25개구 for문으로 돌려서 카페 정보 크롤링하기
-
-import os
-from time import sleep
-import time
-import re
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.common.exceptions import ElementNotInteractableException
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.keys import Keys
-
-##########################################################################
-##################### variable related selenium ##########################
-##########################################################################
-# 서울 특별시 구 리스트
-gu_list = ['마포구','서대문구','은평구','종로구','중구','용산구','성동구','광진구',
-           '동대문구','성북구','강북구','도봉구','노원구','중랑구','강동구','송파구',
-           '강남구','서초구','관악구','동작구','영등포구','금천구','구로구','양천구','강서구']
-
-
-# csv 파일에 헤더 만들어 주기
-for index, gu_name in enumerate(gu_list):
-    fileName = 'test.csv' # index.__str__() + '_' + gu_name + '.'+'csv'
-    file = open(fileName, 'w', encoding='utf-8')
-    file.write("카페명" + "|" + "주소" + "|" + "영업시간" + "|" + "전화번호" + "|" + "대표사진주소" + "\n")
-    file.close()                                    # 처음에 csv파일에 칼럼명 만들어주기
-    
-    options = webdriver.ChromeOptions()
-    # options.add_argument('headless')
-    options.add_argument("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36   ")
-    options.add_argument('lang=ko_KR')
-    chromedriver_path = "D:\workspace\pythonProject2\chromedriver.exe"
-    driver = webdriver.Chrome(os.path.join(os.getcwd(), chromedriver_path), options=options)  # chromedriver 열기
-    driver.get('https://map.kakao.com/')  # 주소 가져오기
-    search_area = driver.find_element_by_xpath('//*[@id="search.keyword.query"]') # 검색 창
-    search_area.send_keys(gu_name + ' 카페')  # 검색어 입력
-    driver.find_element_by_xpath('//*[@id="search.keyword.submit"]').send_keys(Keys.ENTER)  # Enter로 검색
-    driver.implicitly_wait(3) # 기다려 주자
-    more_page = driver.find_element_by_id("info.search.place.more")
-    # more_page.click()
-    more_page.send_keys(Keys.ENTER) # 더보기 누르고
-    # 첫 번째 검색 페이지 끝
-    # driver.implicitly_wait(5) # 기다려 주자
-    time.sleep(1)
-
-    # next 사용 가능?
-    next_btn = driver.find_element_by_id("info.search.page.next")
-    has_next = "disabled" not in next_btn.get_attribute("class").split(" ")
-    Page = 1
-    while has_next: # 다음 페이지가 있으면 loop
-    # for i in range(2, 6): # 2, 3, 4, 5
-        file = open(fileName, 'a', encoding='utf-8')
-        time.sleep(1)
-        # place_lists = driver.find_elements_by_css_selector('#info\.search\.place\.list > li:nth-child(1)')
-        # 페이지 루프
-        #info\.search\.page\.no1 ~ .no5
-        page_links = driver.find_elements_by_css_selector("#info\.search\.page a")
-        pages = [link for link in page_links if "HIDDEN" not in link.get_attribute("class").split(" ")]
-        # print(len(pages), "개의 페이지 있음")
-        # pages를 하나씩 클릭하면서
-        for i in range(1, 6):
-            xPath = '//*[@id="info.search.page.no' + str(i) + '"]'
-            try:
-                page = driver.find_element_by_xpath(xPath)
-                page.send_keys(Keys.ENTER)
-            except ElementNotInteractableException:
-                print('End of Page')
-                break;
-            sleep(3)
-            place_lists = driver.find_elements_by_css_selector('#info\.search\.place\.list > li')
-            for p in place_lists: # WebElement
-                # print(p.get_attribute('innerHTML'))
-                # print("type of p:", type(p))
-                store_html = p.get_attribute('innerHTML')
-                store_info = BeautifulSoup(store_html, "html.parser")
-                # BS -> 분석
-                #
-                place_name = store_info.select('.head_item > .tit_name > .link_name')
-                # place_address = store_info.select('.info_item > .addr > p')
-                # place_hour = store_info.select('.info_item > .openhour > p > a')
-                # place_tel = store_info.select('.info_item > .contact > span')
-                 # print("length:", len(place_name))
-                if len(place_name) == 0:
-                    continue # 광고
-                place_name = store_info.select('.head_item > .tit_name > .link_name')[0].text
-                place_address = store_info.select('.info_item > .addr > p')[0].text
-                place_hour = store_info.select('.info_item > .openhour > p > a')[0].text
-                place_tel = store_info.select('.info_item > .contact > span')[0].text
-
-
-                # 사진url 수집
-                detail = p.find_element_by_css_selector('div.info_item > div.contact > a.moreview')
-                detail.send_keys(Keys.ENTER)
-
-                driver.switch_to.window(driver.window_handles[-1])
-
-                place_photo = ""
-                try:
-                    photo = driver.find_element_by_css_selector('span.bg_present')
-                    photo_url = photo.get_attribute('style')
-                    m = re.search('"(.+?)"', photo_url)
-                    if m:
-                        place_photo = m.group(1)
-                    else:
-                        place_photo = ""
-                except:
-                    place_photo = ""
-                driver.close()
-                driver.switch_to.window(driver.window_handles[0])
-                print(place_name, place_photo)
-
-                file.write(place_name + "|" + place_address + "|" + place_hour + "|" + place_tel + "|" + place_photo + "\n")
-            print(i, ' of', ' [ ' , Page, ' ] ')
-        next_btn = driver.find_element_by_id("info.search.page.next")
-        has_next = "disabled" not in next_btn.get_attribute("class").split(" ")
-        if not has_next:
-            print('Arrow is Disabled')
-            driver.close()
-            file.close()
-            break # 다음 페이지 없으니까 종료
-        else: # 다음 페이지 있으면
-            Page += 1
-            next_btn.send_keys(Keys.ENTER)
-    print("End of Crawl")
-
-```
