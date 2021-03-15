@@ -89,15 +89,15 @@ tags:
 <br>
 또한 각 형태소 분석기의 문자 개수를 늘려감에 따라 모든 클래스의 실행 시간은 기하급수적으로 증가하는 것을 알 수 있다.
 
-![코엔엘성능비교](https://zhuyuan7.github.io/assets/images/코엔엘성능비교.jpg "코엔엘성능비교"){: .align-center}  
-<center> <그림1> 형태소 분석기 실행시간 </center>
+![코엔엘성능비교](https://zhuyuan7.github.io/assets/images/코엔엘성능비교.jpg "코엔엘성능비교"){: .align-center}<center> <그림 1> 형태소 분석기 실행시간 </center>  
 - 출처 : [KoNLPy](https://konlpy.org/ko/v0.4.3/morph/#pos-tagging-with-konlpy)
 
 
 본래 적용하려던 형태소 분석기는 **은전한닢**으로, 은전한닢이 로딩시간과 실행시간에서 제일 짧아 적용하려 하였으나, 
 원도우에서 지원이 되지않아 사용하지 못했다.  
 
-그래서 은전한닢 다음으로 성능이 좋은 **Okt**를 적용하여 자연어 처리를 진행하였다.
+은전한닢 다음으로 성능이 좋은 **Okt**를 적용하여 자연어 처리를 진행하기로 
+최종결정하였다.
 
 
 
