@@ -74,10 +74,11 @@ tags:
 구글맵의 카페 후기를 크롤링해서 얻은 결과물을 **자연어 처리(Natural Language Processing)** 를 통해 
 단어의 빈도수를 분석하여 각 카페 이용 목적에 따른 요소들을 분류하고자 했다.
 <br>
-> 텍스트 마이닝이란?
-  >텍스트를 언어학, 수학, 통계학, 컴퓨터공학 등의 학문적 지식을 이용하여 특정 목적에 맞게 유의미한 정보를 추출하는 분석 및 처리 과정을 텍스트 마이닝(text mining)이라고 한다.
-   - 출처: 통계청 [통계교육원](http://sti.kostat.go.kr/window/2017b/html/2017_win_3.html)
-  > 텍스트 마이닝 4단계 절차
+> **텍스트 마이닝**이란?  
+  >텍스트를 언어학, 수학, 통계학, 컴퓨터공학 등의 학문적 지식을 이용하여 특정 목적에 맞게 유의미한 정보를 추출하는 분석 및 처리 과정을 **텍스트 마이닝(text mining)**이라고 한다.
+   - 출처: 통계청 [통계교육원](http://sti.kostat.go.kr/window/2017b/html/2017_win_3.html)  
+
+  > 텍스트 마이닝 4단계 절차  
    1. 1단계 : 텍스트 수집 (crawling, scrapping)
    2. 2단계 : 텍스트 정제 (natural language processiong)
    3. 3단계 : 텍스트 분석 ( word cloud & TF-IDF, SNA, cluster analysis,topic modeling, word embedding, sentiment analysis)
