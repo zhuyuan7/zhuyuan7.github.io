@@ -109,8 +109,9 @@ def main():
 ### 2.2. 카페 "후기"와 "별점" 수집
 
 각 카페의 특색을 알기 위해, 카페 이용자들이 구글맵 상의 등록한 **"후기"와 "별점"**을 
-다음과 같은 코드를 통해 수집하였다. 또한 각 이용후기 데이터마다 식별자 **"GU"+"ID"**를 부여해 
-후기 데이터의 자연어 처리시 어떤 카페의 후기 데이터인지 구별하기 쉽게 설정하였다.
+다음과 같은 코드를 통해 수집하였다. 
+
+
 <br> 
 
 ```python
@@ -158,6 +159,15 @@ def get_store_review_data(driver, cafe_info):
     return result
 ```
 
+<br>
+또한 각 이용후기 데이터마다 식별자 **"GU"+"ID"**를 부여해 
+후기 데이터의 자연어 처리시 식별자만 보고도 어떤 카페의 후기 데이터인지 판단하기 쉽게 설정하였다.
+```예) 카페노티드 청담 : "GN"+"ID" --> GN1 : 카페노티드 청담```
+
+![후기식별자](https://zhuyuan7.github.io/assets/images/후기식별자.jpg "후기식별자"){: .align-center}
+<center> <그림 3> 후기 데이터 식별자 </center>
+
+
 
 <br>
 ### 2.3. 수집과정 중 오류발생
@@ -168,7 +178,7 @@ def get_store_review_data(driver, cafe_info):
 이러한 불일치 정보는 이용 후기 데이터에서 제외시켰다.
 
 ![후기오류](https://zhuyuan7.github.io/assets/images/후기오류.jpg "후기오류"){: .align-center}
-<center> <그림 3> 구글맵 후기오류 </center>
+<center> <그림 4> 구글맵 후기오류 </center>
 
 
 
@@ -177,9 +187,9 @@ def get_store_review_data(driver, cafe_info):
 ### 2.4. 후기 데이터 결과물
 
 웹크롤링을 통해, 서울시 25개 구 카페 이용후기 데이터 총 473,475개의 데이터를 확보하였다.
-
-![댓글결과](https://zhuyuan7.github.io/assets/images/댓글결과.jpg "댓글결과"){: .align-center}
-<center> <그림 3> 서울시 25개 구 카페 이용후기 수집 결과물 </center>
+- 별점만 부여한 후기는 댓글 칸을 빈칸으로 남겨두었음.
+![후기결과물](https://zhuyuan7.github.io/assets/images/후기결과물.jpg "후기결과물"){: .align-center}
+<center> <그림5> 서울시 25개 구 카페 이용후기 수집 결과물 </center>
 
 
 
