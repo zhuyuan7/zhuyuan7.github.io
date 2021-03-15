@@ -84,7 +84,7 @@ tags:
  - 2단계 : 텍스트 정제 (natural language processiong)
  - 3단계 : 텍스트 분석 ( word cloud & TF-IDF, SNA, cluster analysis,topic modeling, word embedding, sentiment analysis)
  - 4단계 : 평가 및 적용 (data visualization, dashboard)
-  - 출처 : 윤태일, 이수안, 『파이썬으로 텍스트 분석하기』, 늘봄(2018), 23.
+     - 출처 : 윤태일, 이수안, 『파이썬으로 텍스트 분석하기』, 늘봄(2018), 23.
 <br>
 
 
