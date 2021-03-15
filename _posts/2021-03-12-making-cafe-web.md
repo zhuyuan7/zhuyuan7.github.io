@@ -117,6 +117,9 @@ print(df)
 <br>
 
 
+----
+
+
 <br>
 # 2. 핵심어 빈도분석  
 카페의 특성을 파악하기 위해, 카페 이용후기 자연어 처리 과정을 거쳐
@@ -207,6 +210,9 @@ if __name__ == '__main__':
 
 ![워드클라우드](https://zhuyuan7.github.io/assets/images/워드클라우드.jpg "워드클라우드"){: .align-center}<center> <그림 2> 이용리뷰 워드클라우드 </center> 
 <br>
+
+
+----
 
 
 <br>
