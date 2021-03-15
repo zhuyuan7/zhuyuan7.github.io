@@ -60,8 +60,7 @@ tags:
 > **자연어 처리(Natural Language Processing)**란?  
  - 일상적인 자연어를 분석이 가능하도록 정제하는 과정.  
 
-
- > 코엔엘파이(KoNLPy)란?  
+ >> **코엔엘파이(KoNLPy)**란?  
  - 한국어 자연어 처리를 위한 파이썬 패키지는 코엔엘파이(KoNLPy) 라이브러리다. 
  - 코엔엘파인(KoNLPy)는 한나눔(Hannanum), 꼬꼬마(KKMA), 코모란(Komoran), 은전한닢(Mecab), Okt(Open-korean-text)의 
  5가지 형태소 분석기를 제공한다.  
