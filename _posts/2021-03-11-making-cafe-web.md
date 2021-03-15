@@ -49,7 +49,7 @@ tags:
 
 ![카페후기](https://zhuyuan7.github.io/assets/images/카페후기.jpg "카페후기"){: .align-center}
 <center> <그림 1> 구글맵, 카카오맵, 네이버 지도 이용 후기 </center>
-
+<br>
 
 <br>
 ### 1. 2. 구글맵 API 사용제한
@@ -102,7 +102,7 @@ def main():
         })
 
 ```
-
+<br>
 
 
 
@@ -166,7 +166,7 @@ def get_store_review_data(driver, cafe_info):
 
 ![후기식별자](https://zhuyuan7.github.io/assets/images/후기식별자.jpg "후기식별자"){: .align-center}
 <center> <그림 3> 후기 데이터 식별자 </center>
-
+<br>
 
 
 
@@ -180,7 +180,7 @@ def get_store_review_data(driver, cafe_info):
 
 ![후기오류](https://zhuyuan7.github.io/assets/images/후기오류.jpg "후기오류"){: .align-center}
 <center> <그림 4> 구글맵 후기오류 </center>
-
+<br>
 
 
 
@@ -192,7 +192,7 @@ def get_store_review_data(driver, cafe_info):
 
 ![후기결과물](https://zhuyuan7.github.io/assets/images/후기결과물.jpg "후기결과물"){: .align-center}
 <center> <그림 5> 카페 이용후기 데이터 결과물 </center>
-
+<br>
 
 
 
