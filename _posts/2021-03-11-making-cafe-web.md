@@ -30,12 +30,12 @@ tags:
 -----
 
 <br>
-## 1. 구글맵 상의 카페 이용후기 수집
+## 1. 카페 이용 후기 수집대상 포털사이트 선정
 
 카카오맵에서 확보한 12,000건에 대한 카페정보 데이터를 활용해 
 구글맵에서 카페 이용 후기들을 수집하였다.
 
-### 1.1 왜 굳이 카카오맵이 아닌 구글맵에서 이용후기를 수집했는가?
+### 1.1. 왜 굳이 카카오맵이 아닌 구글맵에서 이용후기를 수집했는가?
 카카오맵에서 카페정보를 수집하고 수집된 카페들의 후기를 수집해보았는 데,
 후기 데이터의 양도 적을 뿐더러, 댓글의 내용이 너무 짧고 구체적이지 않아 
 카페 특색을 추출하기엔 부적합하다고 판단하였다. 
@@ -51,9 +51,9 @@ tags:
 <center> <그림 1> 구글맵, 카카오맵, 네이버 지도 이용 후기 </center>
 
 <br>
-### 1. 2 구글맵 API 사용제한
+### 1. 2. 구글맵 API 사용제한
 
-앞서 살펴본 카카오맵 REST API 사용시 사용제한이 있는 것과 같이, 
+앞서 살펴본 [Kakao REST API](https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-keyword.%7Bformat%7D) 사용시 사용제한이 있는 것과 같이, 
 [Google Maps Platform](https://developers.google.com/maps/faq#usage_apis) 에서도 
 API 사용 제한이 있어 보다 원활한 정보 수집을 위해 직접 코드를 작성하여 웹크롤링을 진행하였다.
 
@@ -62,9 +62,56 @@ API 사용 제한이 있어 보다 원활한 정보 수집을 위해 직접 코�
 <center> <그림 2> 구글맵 API 사용제한 </center>
 
 
+----
+
+<br>
+## 2. 구글맵 상의 카페 이용 후기 수집
+### 2.1. 서울시 25개 구 카페 이요 후기 데이터 수집
+
+카카오맵 웹크롤링을 통해 확보한 12,500개의 25개 구 카페 정보 데이터을 기반으로, 
+구글맵 상의 카페 이용 후기를 수집하였다.
+
+카카오맵과 구글맵 상의 등록된 카페정보의 불일치를 방지하기 위해, 
+"카페이름"+"카페주소"+카페전화번호"로 설정하여 수집을 진행하였다.
+작성한 코드는 다음과 같다.
+
+```python
+    # 카페 1개의 정보 구, ID, 카페명, 주소 ...
+    # df = pd.read_csv(r'C:\Users\USER\Desktop\cafe_list\result_gu.csv')
+    # df['검색어'] = df['카페명'] + df['주소'] + df['전화번호']
+    df = pd.read_csv(r'C:\Users\USER\Desktop\cafe_list\CAFE\XIN_result_gu2.csv', encoding='utf-8-sig', sep="|")
+    gu = df['구']
+    cafe_id = df['ID']
+    cafe_name = df['카페명']
+    cafe_addr = df['주소']
+    cafe_tel = df['전화번호'].astype(str)
+    cafe_len = len(cafe_name)
+    search_name = []
+    for i in range(cafe_len):
+        name = cafe_name[i] + " " + cafe_addr[i] + " " + cafe_tel[i]
+        search_name.append({
+            "name":name,
+            "gu": gu[i],
+            "cafe_id": cafe_id[i]
+        })
+
+```
+<br>
 
 
- 
+### 2.2. 수집과정 중 오류발생
+
+카페 이용 후기 데이터의 정확도를 높이기 위해, 검색어를 `df['검색어'] = df['카페명'] + df['주소'] + df['전화번호']` 설정했는 데,
+카카오맵과 구글맵의 각 등록된 카페정보가 불일치하여, 
+복수 결과값(한국어표기-영문표기)과 부분 일치값(도로명 주소-지번 주소)을 도출하게 되었다.
+이러한 불일치 정보는 이용 후기 데이터에서 제외시켰다.
+
+![후기오류](https://zhuyuan7.github.io/assets/images/후기오류.jpg "후기오류"){: .align-center}
+<center> <그림 3> 구글맵 후기오류 </center>
+
+
+
+
 
 <br>
 >**Beautiful Soup이란?**  
