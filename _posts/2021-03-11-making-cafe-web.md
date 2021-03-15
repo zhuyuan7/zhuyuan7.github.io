@@ -168,6 +168,7 @@ def get_store_review_data(driver, cafe_info):
 
 
 <br>
+
 ### 2.3. 수집과정 중 오류발생
 
 카페 이용 후기 데이터의 정확도를 높이기 위해, 검색어를 `df['검색어'] = df['카페명'] + df['주소'] + df['전화번호']` 
@@ -182,19 +183,21 @@ def get_store_review_data(driver, cafe_info):
 
 
 <br>
+
 ### 2.4. 후기 데이터 결과물
-
 웹크롤링을 통해, 총 473,475개의 서울시 25개 구 카페 이용후기 데이터를 확보하였다.
-  - 별점만 등록한 후기는 후기 칸을 빈칸으로 남겨두었음.
+- 별점만 등록한 후기는 후기 칸을 빈칸으로 남겨두었음.
 
-  ![후기결과물](https://zhuyuan7.github.io/assets/images/후기결과물.jpg "후기결과물"){: .align-center}
-  <center><그림5> 서울시 25개 구 카페 이용후기 수집 결과물</center>
+![후기결과물](https://zhuyuan7.github.io/assets/images/후기결과물.jpg "후기결과물"){: .align-center}
+<center> <그림5> 서울시 25개 구 카페 이용후기 수집 결과물 </center>
+
+
+
 
 <br>
-
-
 ----
 <br>
+
 ## 3. 구글맵 상의 카페 이용 후기 수집
 
 서울특별시 25개 구의 카페 이용후기 수집 코드는 다음과 같다.
