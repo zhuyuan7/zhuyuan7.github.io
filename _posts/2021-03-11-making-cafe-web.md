@@ -50,6 +50,7 @@ tags:
 ![카페후기](https://zhuyuan7.github.io/assets/images/카페후기.jpg "카페후기"){: .align-center}
 <center> <그림 1> 구글맵, 카카오맵, 네이버 지도 이용 후기 </center>
 
+
 <br>
 ### 1. 2. 구글맵 API 사용제한
 
@@ -101,6 +102,7 @@ def main():
         })
 
 ```
+
 
 
 
@@ -167,6 +169,7 @@ def get_store_review_data(driver, cafe_info):
 
 
 
+
 <br>
 ### 2.3. 수집과정 중 오류발생
 
@@ -189,6 +192,9 @@ def get_store_review_data(driver, cafe_info):
 
 ![후기결과물](https://zhuyuan7.github.io/assets/images/후기결과물.jpg "후기결과물"){: .align-center}
 <center> <그림 5> 카페 이용후기 데이터 결과물 </center>
+
+
+
 
 <br>
 ## 3. 카페후기 수집 코드
