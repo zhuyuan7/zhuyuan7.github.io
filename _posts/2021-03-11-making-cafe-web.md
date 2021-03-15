@@ -194,14 +194,6 @@ def get_store_review_data(driver, cafe_info):
 
 
 
-<br>
-----
-<br>
-
-## 3. 구글맵 상의 카페 이용 후기 수집
-
-서울특별시 25개 구의 카페 이용후기 수집 코드는 다음과 같다.
-
 ```python
 import os
 import re
