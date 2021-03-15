@@ -188,7 +188,7 @@ def get_store_review_data(driver, cafe_info):
 - 별점만 등록한 후기는 후기 칸을 빈칸으로 남겨두었음.
 
 ![후기결과물](https://zhuyuan7.github.io/assets/images/후기결과물.jpg "후기결과물"){: .align-center}
-
+<center> <그림 5> 카페 이용후기 데이터 결과물 </center>
 
 <br>
 ## 3. 카페후기 수집 코드
