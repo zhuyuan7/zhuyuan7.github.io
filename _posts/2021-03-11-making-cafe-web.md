@@ -185,11 +185,12 @@ def get_store_review_data(driver, cafe_info):
 ### 2.4. 후기 데이터 결과물
 
 웹크롤링을 통해, 총 473,475개의 서울시 25개 구 카페 이용후기 데이터를 확보하였다.
+(별점만 등록한 후기는 후기 칸을 빈칸으로 남겨두었음.)
 ![후기결과물](https://zhuyuan7.github.io/assets/images/후기결과물.jpg "후기결과물"){: .align-center}
 <center> <그림5> 서울시 25개 구 카페 이용후기 수집 결과물 </center>
 
 
-- 별점만 등록한 후기는 후기 칸을 빈칸으로 남겨두었음.
+
 
 
 
