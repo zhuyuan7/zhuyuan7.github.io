@@ -105,7 +105,6 @@ def main():
 <br>
 
 
-
 <br>
 
 ### 2.2. 카페 "후기"와 "별점" 수집
@@ -169,7 +168,6 @@ def get_store_review_data(driver, cafe_info):
 <br>
 
 
-
 <br>
 ### 2.3. 수집과정 중 오류발생
 
@@ -183,7 +181,6 @@ def get_store_review_data(driver, cafe_info):
 <br>
 
 
-
 <br>
 ### 2.4. 후기 데이터 결과물
 
@@ -195,7 +192,7 @@ def get_store_review_data(driver, cafe_info):
 <br>
 
 
-
+----
 <br>
 ## 3. 카페후기 수집 코드
 
