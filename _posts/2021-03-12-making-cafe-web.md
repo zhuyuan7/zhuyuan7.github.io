@@ -148,6 +148,8 @@ def get_tags(text, ntags=10):
 <br>
 
 ### 2.2. 빈도수 
+텍스트 데이터에서 출현 빈도가 높은 상위 20개 단어를 추출한다.
+
 
 ```python
 def main():
@@ -279,6 +281,6 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
+<br>
 
 
