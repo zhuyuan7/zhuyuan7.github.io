@@ -78,12 +78,12 @@ tags:
   >텍스트를 언어학, 수학, 통계학, 컴퓨터공학 등의 학문적 지식을 이용하여 특정 목적에 맞게 유의미한 정보를 추출하는 분석 및 처리 과정을 **텍스트 마이닝(text mining)**이라고 한다.
    - 출처: 통계청 [통계교육원](http://sti.kostat.go.kr/window/2017b/html/2017_win_3.html)  
 
-  > 텍스트 마이닝 4단계 절차  
-   - 1단계 : 텍스트 수집 (crawling, scrapping)
-   - 2단계 : 텍스트 정제 (natural language processiong)
-   - 3단계 : 텍스트 분석 ( word cloud & TF-IDF, SNA, cluster analysis,topic modeling, word embedding, sentiment analysis)
-   - 4단계 : 평가 및 적용 (data visualization, dashboard)
-    - 출처 : 윤태일, 이수안, 『파이썬으로 텍스트 분석하기』, 늘봄(2018), 23.
+  >> 텍스트 마이닝 4단계 절차  
+     - 1단계 : 텍스트 수집 (crawling, scrapping)
+     - 2단계 : 텍스트 정제 (natural language processiong)
+     - 3단계 : 텍스트 분석 ( word cloud & TF-IDF, SNA, cluster analysis,topic modeling, word embedding, sentiment analysis)
+     - 4단계 : 평가 및 적용 (data visualization, dashboard)
+      - 출처 : 윤태일, 이수안, 『파이썬으로 텍스트 분석하기』, 늘봄(2018), 23.
 <br>
 
 
