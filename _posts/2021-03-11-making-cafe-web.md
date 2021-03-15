@@ -190,14 +190,10 @@ def get_store_review_data(driver, cafe_info):
 ![후기결과물](https://zhuyuan7.github.io/assets/images/후기결과물.jpg "후기결과물"){: .align-center}
 <center> <그림5> 서울시 25개 구 카페 이용후기 수집 결과물 </center>
 
-
-
-
 <br>
-## 3. 카페후기 수집 코드
+### 3. 카페후기 수집 코드
 
 서울특별시 25개 구의 카페 이용후기 수집 코드는 다음과 같다.
-
 ```python
 import os
 import re
