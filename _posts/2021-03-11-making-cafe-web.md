@@ -51,7 +51,6 @@ tags:
 <center> <그림 1> 구글맵, 카카오맵, 네이버 지도 이용 후기 </center>
 
 <br>
-<br>
 ### 1. 2. 구글맵 API 사용제한
 
 앞서 살펴본 [Kakao REST API](https://developers.kakao.com/tool/rest-api/open/get/v2-local-search-keyword.%7Bformat%7D) 사용시 사용제한이 있는 것과 같이, 
@@ -64,7 +63,7 @@ API 사용 제한이 있어 보다 원활한 정보 수집을 위해 직접 코�
 
 
 ----
-<br>
+
 <br>
 ## 2. 구글맵 상의 카페 이용 후기 수집
 ### 2.1. 서울시 25개 구 카페 이용 후기 데이터 수집
@@ -104,7 +103,7 @@ def main():
 ```
 
 
-<br>
+
 <br>
 
 ### 2.2. 카페 "후기"와 "별점" 수집
@@ -167,7 +166,7 @@ def get_store_review_data(driver, cafe_info):
 <center> <그림 3> 후기 데이터 식별자 </center>
 
 
-<br>
+
 <br>
 ### 2.3. 수집과정 중 오류발생
 
@@ -181,7 +180,7 @@ def get_store_review_data(driver, cafe_info):
 
 
 
-<br>
+
 <br>
 ### 2.4. 후기 데이터 결과물
 
@@ -193,12 +192,11 @@ def get_store_review_data(driver, cafe_info):
 
 
 
+
 <br>
-<br>
-## 3. 카페후기 수집 코드
+### 3. 카페후기 수집 코드
 
 서울특별시 25개 구의 카페 이용후기 수집 코드는 다음과 같다.
-
 ```python
 import os
 import re
@@ -332,4 +330,6 @@ if __name__ == "__main__":
     main()
 
 ```
+
+
 
