@@ -114,15 +114,11 @@ okt= Okt()
 df=pd.read_csv('/content/drive/MyDrive/Colab Notebooks/Count_cafe/25.JL .csv', encoding='utf-8', sep="|")
 print(df)
 ```
-<br>
 
 
-----
 
 
-<br>
-2. 핵심어 빈도분석
-===
+# 2. 핵심어 빈도분석
 카페의 특성을 파악하기 위해, 카페 이용후기 자연어 처리 과정을 거쳐
 명사만 추출하고, 그 빈도를 계산한 후에 최빈도수 상위 20개 단어를 추출하였다.
 
