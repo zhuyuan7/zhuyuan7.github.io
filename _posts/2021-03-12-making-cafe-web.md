@@ -152,8 +152,8 @@ def get_tags(text, ntags=10):
 
 <br>
 ### 2.2. 빈도수
-명사 단위로 분리한 서울시 25개 구 카페 이용후기 데이터에서 
-출현 빈도가 높은 상위 20개 단어를 추출하여 빈도수 데이터를 확보하였다.  
+명사 단위로 분리해 추출한 서울시 25개 구 카페 이용후기 데이터에서 
+출현 빈도가 높은 상위 20개 단어를 추출하여 총 98,053개의 빈도수 데이터를 확보하였다.  
 
 
 ```python
@@ -202,7 +202,7 @@ if __name__ == '__main__':
 물론, 이 경우도 마찬가지로 하나의 '핵심어'에 식별자('GU'+'ID')를 부여하여
 어떤 카페의 핵심어인지 판별할 수 있게 설정하였다.
 
-![빈도수결과](https://zhuyuan7.github.io/assets/images/빈도수결과.jpg "빈도수결과"){: .align-center}<center> <그림 1> 자연어처리 및 빈도수 분석 결과 </center>
+![빈도수결과](https://zhuyuan7.github.io/assets/images/빈도수결과.jpg "빈도수결과"){: .align-center}<center> <그림 2> 자연어처리 및 빈도수 분석 결과 </center>
 
 
 <br>
@@ -219,16 +219,17 @@ if __name__ == '__main__':
 <br>
 
 
-![워드클라우드](https://zhuyuan7.github.io/assets/images/워드클라우드.jpg "워드클라우드"){: .align-center}<center> <그림 2> 이용리뷰 워드클라우드 </center> 
+![워드클라우드](https://zhuyuan7.github.io/assets/images/워드클라우드.jpg "워드클라우드"){: .align-center}<center> <그림 3> 이용리뷰 워드클라우드 </center> 
 <br>
 
 <br> 
 
 ### 2.4. 자연어 처리 보완점
 
-1. 2가지 단어가 혼합되어있는 메뉴는 인식불가
+1. 복합 단어 인식불가
 예를 들어 밀크티의 경우, "밀크"+"티"로 이루어져 있어 "밀크티"로 분석되기 보다는 "밀크"+"티"로 분석된다.
-![밀크티](https://zhuyuan7.github.io/assets/images/밀크티.jpg "밀크티"){: .align-center}<center> <그림 2> 외래어 자연어 처리 결과 </center> 
+![밀크티](https://zhuyuan7.github.io/assets/images/밀크티.jpg "밀크티"){: .align-center}<center> <그림 4> 복합단어 처리 결과-밀크티 </center> 
+![가성비](https://zhuyuan7.github.io/assets/images/가성비.jpg "가성비"){: .align-center}<center> <그림 5> 복합단어 처리 결과-가성비 </center> 
 
 2. 
 
