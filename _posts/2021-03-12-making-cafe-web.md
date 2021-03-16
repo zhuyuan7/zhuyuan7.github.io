@@ -299,36 +299,38 @@ if __name__ == '__main__':
 자연어 처리를 진행하면서 한국어 자연어처리 발전을 위해 기본적으로 
 신경써야할 점들을 크게 3가지로 나눠보았다.
  
-- 한국어는 꼭 끝까지 들어봐야 한다.  
-
-주어나 목적어를 생략하고 말을 하는 경우가 있고, "개떡같이 말해도 찰떡같이 알아듣는 DNA"가 있어
-한국어 원어민이 아닌 이상 개떡같이 말하면 외국인들은 알아듣기가 참 힘들 것이다.
-
-
+- **한국어는 꼭 끝까지 들어봐야 한다. ** 
+  
+  주어나 목적어를 생략하고 말을 하는 경우가 있고, "개떡같이 말해도 찰떡같이 알아듣는 DNA"가 있어
+  한국어 원어민이 아닌 이상 개떡같이 말하면 외국인들은 알아듣기가 참 힘들 것이다.
+  
+  
 ![한국어](https://zhuyuan7.github.io/assets/images/한국어.jpg "한국어"){: .align-center}<center> <그림 8> 끝까지 들어야 되는 한국어 </center> 
-  - 출처 : [국립국어원](https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&qna_seq=32532)
+   -- 출처 : [국립국어원](https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&qna_seq=32532)
 <br>
 
 
 <br>
-- 한국어 띄어쓰기의 중요성  
+- **한국어 띄어쓰기의 중요성**  
+  
+  한국어는 영어와 중국어와는 다르게 띄어쓰기에 따라 의미가 와전될 수 있다. 
+  유명한 예로 "아버지가 방에 들어가신다."라는 말이 있지 않는가.
 
-한국어는 영어와 중국어와는 다르게 띄어쓰기에 따라 의미가 와전될 수 있다. 
-유명한 예로 "아버지가 방에 들어가신다."라는 말이 있지 않는가.
+
 ![가방에](https://zhuyuan7.github.io/assets/images/가방에.jpg "가방에"){: .align-center}<center> <그림 9> 아버지가방에들어가신다 </center> 
-  - 출처 : [엠빅뉴스](https://m.post.naver.com/viewer/postView.nhn?volumeNo=10576842&memberNo=28995784&vType=VERTICAL)
+   -- 출처 : [엠빅뉴스](https://m.post.naver.com/viewer/postView.nhn?volumeNo=10576842&memberNo=28995784&vType=VERTICAL)
 <br>
 
 
 <br>
-- 한국어의 신조어, 은어, 비속어  
-
-창의적인 감정표현에 능한 민족이라 신조어, 은어, 비속어의 발달 속도가 빠르다. 
-따라서 컴퓨터에게 훈련시켜야 되는 언어들이 지속적으로 생겨난다.  
-
-
+- **한국어의 신조어, 은어, 비속어**  
+  
+  창의적인 감정표현에 능한 민족이라 신조어, 은어, 비속어의 발달 속도가 빠르다. 
+  따라서 컴퓨터에게 훈련시켜야 되는 언어들이 지속적으로 생겨난다.  
+  
+  
 ![개이득](https://zhuyuan7.github.io/assets/images/개이득.jpg "개이득"){: .align-center}<center> <그림 10> 개이득 은어 </center> 
-  - 출처 : MBC 무한도전
+   -- 출처 : MBC 무한도전
 <br>
 
 
