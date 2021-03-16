@@ -50,8 +50,8 @@ tags:
 
 이번 과정의 절차는 다음과 같이 이루어졌다.
 
-1. [KoNLPy](https://konlpy.org/en/latest/) 라이브러리의 [Okt](https://github.com/open-korean-text/open-korean-text) 형태소 분석기를 활용하여 명사 단위로 형태소 분석을 진행하였으며,
-2. 자연어처리를 마친 데이터를 두고 댓글에 대한 빈도수 결과를 도출하였다.
+1. [KoNLPy](https://konlpy.org/en/latest/) 라이브러리의 [Okt](https://github.com/open-korean-text/open-korean-text) 형태소 분석기를 활용하여 명사 단위로 형태소 분석  
+2. 자연어처리를 마친 데이터를 두고 댓글에 대한 빈도수 결과 도출  
 
 이 과정을 토대로 텍스트 마이닝을 진행하였다.
 <br>
@@ -114,7 +114,6 @@ df=pd.read_csv('/content/drive/MyDrive/Colab Notebooks/Count_cafe/25.JL .csv', e
 print(df)
 
 ```
-<br>
 
 
 ----
