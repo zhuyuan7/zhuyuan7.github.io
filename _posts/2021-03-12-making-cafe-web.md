@@ -51,6 +51,7 @@ tags:
 서울특별시 25개 구의 카페 추천 웹페이지를 만들기 위한 데이터들을 확보하였다.
 이렇게 확보한 데이터를 기반으로 자연어 처리와 빈도수 분석을 하여 각 카페에 대한 특성을 추출하였다. 
 
+
 이번 과정의 절차는 다음과 같이 이루어졌다.
 
 1. [KoNLPy](https://konlpy.org/en/latest/) 라이브러리의 [Okt](https://github.com/open-korean-text/open-korean-text) 형태소 분석기를 활용하여 명사 단위로 형태소 분석  
@@ -58,7 +59,7 @@ tags:
 
 이 과정을 토대로 텍스트 마이닝을 진행하였다.
 <br>
-
+<br>
 > **자연어 처리(Natural Language Processing)**란?  
  - 일상적인 자연어를 분석이 가능하도록 정제하는 과정.
 
@@ -87,6 +88,7 @@ tags:
 | 한나눔 | 0.6591 | 8.8251 |
 | 코모란 | 5.4866 | 25.6008 |
 | 꼬꼬마 | 5.6988 | 35.7163 |
+<br>
 
 
 <br>
@@ -117,6 +119,7 @@ okt= Okt()
 df=pd.read_csv('/content/drive/MyDrive/Colab Notebooks/Count_cafe/25.JL .csv', encoding='utf-8', sep="|")
 print(df)
 ```
+<br>
 
 -----
 
@@ -145,7 +148,8 @@ def get_tags(text, ntags=10):
     # most_common 메소드는 정수를 입력받아 객체 안의 명사중 빈도수
     # 큰 명사부터 순서대로 입력받은 정수 갯수만큼 저장되어있는 객체 반환
     # 명사와 사용된 갯수를 return_list에 저장합니다.
-    return return_list
+    return return_list      
+    # 참고 : http://yoonpunk.tistory.com/7
 ```
 <br>
 
@@ -290,6 +294,8 @@ if __name__ == '__main__':
 <br>
 
 
+<br>
+
 자연어 처리를 진행하면서 한국어 자연어처리 발전을 위해 기본적으로 
 신경써야할 점들을 크게 3가지로 나눠보았다.
  
@@ -303,6 +309,8 @@ if __name__ == '__main__':
   - 출처 : [국립국어원](https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&qna_seq=32532)
 <br>
 
+
+<br>
 2.한국어 띄어쓰기의 중요성  
 
 한국어는 영어와 중국어와는 다르게 띄어쓰기에 따라 의미가 와전될 수 있다. 
@@ -325,6 +333,8 @@ if __name__ == '__main__':
 
 
 ----
+
+<br>
 
 
 <br>
