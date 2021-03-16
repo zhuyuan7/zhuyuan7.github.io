@@ -213,7 +213,7 @@ if __name__ == '__main__':
 
 
 <br>
-# 3. 자연어 처리 및 빈도수 코드
+## 3. 자연어 처리 및 빈도수 코드
 ```python
 from konlpy.tag import Okt
 import numpy as np
