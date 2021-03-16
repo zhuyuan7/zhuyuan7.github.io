@@ -92,6 +92,7 @@ tags:
      - 출처 : [KoNLPy](https://konlpy.org/ko/v0.4.3/morph/#pos-tagging-with-konlpy)
 
 
+<br>
 본래 적용하려던 형태소 분석기는 **은전한닢**으로, 은전한닢이 로딩시간과 실행시간에서 제일 짧아 적용하려 하였으나, 
 원도우에서 지원이 되지않아 사용하지 못했다.  
 
