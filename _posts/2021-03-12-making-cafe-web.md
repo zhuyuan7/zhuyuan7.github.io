@@ -343,7 +343,7 @@ if __name__ == '__main__':
 
 
 ![한국소피아](https://zhuyuan7.github.io/assets/images/한국소피아.jpg "한국소피아"){: .align-center}<center> <그림 11> 인공지능 로봇 소피아</center> 
-  - 출처 : 인공지능신문(http://www.aitimes.kr)
+  - 출처 : [인공지능신문](http://www.aitimes.kr)
 <br>
 
 
