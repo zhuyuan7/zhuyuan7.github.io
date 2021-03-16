@@ -99,6 +99,7 @@ tags:
 은전한닢 다음으로 성능이 좋은 **Okt**를 적용하여 자연어 처리를 진행하기로 
 최종결정하였다.
 
+### 2. 핵심어 빈도분석 (테스트)
 
 ```python
 from konlpy.tag import Okt
