@@ -112,13 +112,8 @@ okt= Okt()
 
 df=pd.read_csv('/content/drive/MyDrive/Colab Notebooks/Count_cafe/25.JL .csv', encoding='utf-8', sep="|")
 print(df)
-
 ```
-<br>
 
------
-
-<br>
 
 # 2. 핵심어 빈도분석
 
