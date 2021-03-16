@@ -145,6 +145,7 @@ def get_tags(text, ntags=10):
 ```
 <br>
 
+
 <br>
 
 ### 2.2. 빈도수
