@@ -115,14 +115,5 @@ df=pd.read_csv('/content/drive/MyDrive/Colab Notebooks/Count_cafe/25.JL .csv', e
 print(df)
 ```
 <br>
-
-
-<br>
-# 2. 핵심어 빈도분석
-카페의 특성을 파악하기 위해, 카페 이용후기 자연어 처리 과정을 거쳐
-명사만 추출하고, 그 빈도를 계산한 후에 최빈도수 상위 20개 단어를 추출하였다.
-
-
-### 2.1. twitter.nouns()
-빈도수 분석을 하기에 앞서, Okt를 적용하여 명사단위로 분리하고 추출했으며,
+# 2. 핵심어 빈도 분석
 
