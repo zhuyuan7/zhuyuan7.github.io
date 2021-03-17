@@ -59,7 +59,7 @@ Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://
 pip install django
 
 1) 애플리케이션 생성
-  django-admin startproject config .
+  django-admin startproject config
 
 2) 기본테이블 생성 
   python manage.py migrate
