@@ -72,8 +72,21 @@ Quit the server with CTRL-BREAK.
 
 # 2. MySQL Database Service 
 
+Django를 설치하면 기본적으로 SQLite로 연동되어있지만, 우리 팀은 **MySQL**을 사용하기로 했다.
+원래는 SQLite를 사용하려 했지만, SQLlite는 적은 양의 데이터를 저장할 때 많이 사용되는 거라 
+많은 양의 데이터를 저장하기엔 비교적 적합하지 않다는 판단이 들었으며, 마감날짜가 코앞에 
+다가왔으므로 새로운 것을 습득할 시간적 여유가 없어 수업시간에 사용해 본 적이 있는 MySQL을 
+프로젝트의 데이터베이스로 선택하였다.
+<br>
+
+
+![SQL](https://zhuyuan7.github.io/assets/images/SQL.jpg "SQL"){: .align-center}<center> <그림 2> MySQL </center>
+
+
 > MySQL Database Service란?  
   개발자가 세계에서 가장 널리 사용되는 오픈 소스 데이터베이스를 사용하여 
   안전한 클라우드 네이티브 애플리케이션을 빠르게 개발하고 배포할 수 있도록
   하는 완전 관리형 데이터베이스 서비스입니다.  
   - 출처:[오라클](https://www.oracle.com/kr/mysql/)
+ <br>
+
