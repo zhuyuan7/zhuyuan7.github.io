@@ -1,5 +1,5 @@
 ---
-title:  "(6) 서울 카페 추천 웹사이트 만들기 - Django 이용"
+title:  "(6) 서울 카페 추천 웹사이트 만들기 - Django / MySQL 이용"
 excerpt: "Django 이용 웹페이지 구축"
 permalink: "/blog/making-cafe-web-06/"
 author_profile: true
@@ -127,7 +127,7 @@ Django - MySQL 연동 시 다음과 같은 에러가 발생하였다.
 ![장고에러](https://zhuyuan7.github.io/assets/images/장고에러.jpg "장고에러"){: .align-center}<center> <그림 3> Django - MySQL 연동 에러 </center>
 
 
-'conf/__init__'에 다음과 같이 입력하면 해결된다.
+**'conf/__init__'**에 다음과 같이 입력하면 해결된다.
 
 ```python
 import pymysql
