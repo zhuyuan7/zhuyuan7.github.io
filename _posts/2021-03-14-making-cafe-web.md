@@ -88,5 +88,46 @@ Django를 설치하면 기본적으로 SQLite로 연동되어있지만, 우리 �
   안전한 클라우드 네이티브 애플리케이션을 빠르게 개발하고 배포할 수 있도록
   하는 완전 관리형 데이터베이스 서비스입니다.  
   - 출처:[오라클](https://www.oracle.com/kr/mysql/)
- <br>
+ 
+<br>
 
+
+<br>
+# 3. Django - MySQL 연동
+
+Django의 데이터베이스 기본값인 SQLlite에서 MySQL로 바꾸기 위해 
+'config.settings'의 내용을 수정하여 Django와 MySQL을 연동시켰다.
+
+```python
+import pymysql
+pymysql.install_as_MySQLdb()
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', #MySQL로 수정
+        'NAME': 'cafe_db',  # DB
+        'USER': 'idid',  # id
+        'PASSWORD': '0000',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+```
+<br>
+
+
+<br>
+# 4. Django - MySQL 연동 에러 발생
+
+Django - MySQL 연동 시 다음과 같은 에러가 발생하였다. 
+
+
+![장고에러](https://zhuyuan7.github.io/assets/images/장고에러.jpg "장고에러"){: .align-center}<center> <그림 3> Django - MySQL 연동 에러 </center>
+
+
+'conf/__init__'
+
+```python
+import pymysql
+pymysql.version_info = (1, 4, 13, "final", 0)
+pymysql.install_as_MySQLdb()
+```
