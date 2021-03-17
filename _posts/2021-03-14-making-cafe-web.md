@@ -32,12 +32,18 @@ tags:
 길고 긴 데이터 마이닝과 텍스트 마이닝 과정을 완료하고 이제 진짜 마지막 단계인 웹페이지 구축단계가 시작됐다.
 (내가 하다하다 Django까지 손을 댈 줄이야... ) 
 이번 프로젝트에서 웹페이지 구축 시 Django 3.1.4를 활용했는 데, 그 이유는 100% 파이썬으로 작성되어
-쉽고 빠르다는 점에서 Django를 선택하게 되었다.  
+쉽고 빠르다는 점에서 Django를 선택하게 되었다. 
+
+Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://www.youtube.com/channel/UCtCiMH6QQxGU80r4SczFCRg)
+강의를 참고하여 만들어보았다.(현재 내가 참고했던 장고강의는 삭제되었다.)
+<br>
 
 
+<br>
 ![장고](https://zhuyuan7.github.io/assets/images/장고.jpg "장고"){: .align-center}<center> <그림 1> Django </center>
 
-> Django 란?
+> Django 란?  
+
   Django는 빠른 개발과 깔끔하고 실용적인 디자인을 장려하는 고수준 Python 웹 프레임 워크입니다.
   숙련 된 개발자가 구축 한이 앱은 웹 개발의 번거 로움을 상당 부분 처리하므로 바퀴를 다시 
   만들 필요없이 앱 작성에 집중할 수 있습니다. 무료이며 오픈 소스입니다.
