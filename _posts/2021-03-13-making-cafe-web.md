@@ -36,5 +36,11 @@ tags:
 <br>
 
 <br>
+# 1.1. 최빈도수 중복값 데이터 합치기
 
+먼저 총 98,053개의 서울시 25개 구 각 카페들의 상위 20개의 최빈도수 데이터의 중복값을 
+합쳐 총 327개의 최빈도수 데이터를 추출하였다.
+
+![중복값](https://zhuyuan7.github.io/assets/images/중복값.jpg "중복값"){: .align-center}<center> <그림 1> 최빈도수 단어 </center> 
+<br>
 
