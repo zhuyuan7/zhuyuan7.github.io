@@ -84,7 +84,7 @@ all_sum=DSC.to_csv(r'/content/drive/MyDrive/new_sum_count.csv', encoding='utf-8-
 9. 브런치카페
 10. 디저트 카페
 ```
-
+<br>
 
 정제된 데이터를 분석하여 특정 테마에 속하는 **카페 특성 요소**를 해당 테마에 배정하였다.
 
