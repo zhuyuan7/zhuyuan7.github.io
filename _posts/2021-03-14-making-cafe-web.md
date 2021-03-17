@@ -42,7 +42,8 @@ Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://
 <br>
 ![장고](https://zhuyuan7.github.io/assets/images/장고.jpg "장고"){: .align-center}<center> <그림 1> Django </center>
 
-> Django 란?  
+> Django 란? 
+
   Django는 빠른 개발과 깔끔하고 실용적인 디자인을 장려하는 고수준 Python 웹 프레임 워크입니다.
   숙련 된 개발자가 구축 한이 앱은 웹 개발의 번거 로움을 상당 부분 처리하므로 바퀴를 다시 
   만들 필요없이 앱 작성에 집중할 수 있습니다. 무료이며 오픈 소스입니다.
