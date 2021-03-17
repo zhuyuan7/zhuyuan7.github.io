@@ -1,6 +1,6 @@
 ---
 title:  "(6) 서울 카페 추천 웹사이트 만들기 - Django / MySQL 이용"
-excerpt: "Django 이용 웹페이지 구축"
+excerpt: "Django/ MySQL 이용 웹페이지 구축"
 permalink: "/blog/making-cafe-web-06/"
 author_profile: true
 toc: true
