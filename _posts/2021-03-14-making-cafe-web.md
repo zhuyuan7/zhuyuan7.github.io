@@ -58,13 +58,13 @@ Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://
 1) pythonmanage.pymigrate
 
 2) 슈퍼유저생성
-Python manage.py create superuser
-username:admin
-password:1234
+  Python manage.py create superuser
+  username:admin
+  password:1234
 
 3) 애플리케이션생성
-Python manage.py start appaddress
-Address 관련 디렉토리가 만들어진다.
+  Python manage.py start appaddress
+  Address 관련 디렉토리가 만들어진다.
 
 4) settings디렉토리(파일)로가서
 	INSTALLED_APPS=[
