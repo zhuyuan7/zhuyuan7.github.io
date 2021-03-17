@@ -51,3 +51,21 @@ Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://
 
 
 <br>
+```python
+Microsoft Windows [Version 10.0.19041.867]
+(c) 2020 Microsoft Corporation. All rights reserved.
+(myweb_JW) C:\Users\ehcho\Desktop\BIG\PROJECT\프젝\myweb2>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+2021-03-17 22:33:57.042673: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudart64_101.dll'; dlerror:
+cudart64_101.dll not found
+2021-03-17 22:33:57.044329: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your mac
+hine.
+System check identified no issues (0 silenced).
+March 17, 2021 - 22:34:03
+Django version 3.1.4, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+```
