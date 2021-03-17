@@ -181,7 +181,7 @@ Django - MySQL 연동 시 다음과 같은 에러가 발생하였다.
 
 
 **'conf/__init__'**에 다음과 같이 입력하면 해결된다.
-
+<br>
 
 ```python
 import pymysql
