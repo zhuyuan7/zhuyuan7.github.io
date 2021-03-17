@@ -44,3 +44,11 @@ tags:
 ![중복값](https://zhuyuan7.github.io/assets/images/중복값.jpg "중복값"){: .align-center}<center> <그림 1> 최빈도수 단어 </center> 
 <br>
 
+
+```python
+import pandas as pd
+df = pd.read_csv(r'/content/drive/MyDrive/Colab Notebooks/cafe/all_word_count.csv', engine='python', encoding='utf-8-sig', sep=' ')
+WC=df.groupby('word')['w_count'].apply(lambda grp: grp.nlargest(10000).sum())
+DSC=WC.sort_values(ascending=False)
+all_sum=DSC.to_csv(r'/content/drive/MyDrive/new_sum_count.csv', encoding='utf-8-sig', sep=' ')
+```
