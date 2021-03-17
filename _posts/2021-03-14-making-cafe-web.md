@@ -65,12 +65,12 @@ pip install django
   python manage.py migrate
 
 3) 슈퍼유저생성
-  Python manage.py create superuser
+  python manage.py create superuser
   username:admin
   password:1234
 
 4) 애플리케이션 생성
-  Python manage.py startapp address
+  python manage.py startapp address
   Address 관련 디렉토리가 만들어진다.
 
 5) settings디렉토리(파일)로가서
@@ -99,17 +99,19 @@ pip install django
 	admin.site.register(Address,AddressAdmin)
 
 8) 데이터베이스변경사항반영
-	Python manage.py makemigrations
-	Python manage.py migrate
+	python manage.py makemigrations
+	python manage.py migrate
 
 9) 웹서버구동
-	Python manage.py runserver 
+	python manage.py runserver 
 
 ```
 <br>
 
 
 <br>
+python manage.py runserver 구동 결과는 다음과 같다.
+
 ```python
 Microsoft Windows [Version 10.0.19041.867]
 (c) 2020 Microsoft Corporation. All rights reserved.
@@ -157,8 +159,9 @@ Django를 설치하면 기본적으로 SQLite로 연동되어있지만, 우리 �
 <br>
 # 3. Django - MySQL 연동
 
-Django의 데이터베이스 기본값인 SQLlite에서 MySQL로 바꾸기 위해 
-'config/settings'의 내용을 수정하여 Django와 MySQL을 연동시켰다.
+Django의 데이터베이스 기본값인 SQLlite에서 MySQL로 바꾸기 위해 `pip install pymysql`로 
+설치한 후, 'config/settings'에 import pymysql과 'ENGINE'의 내용을 수정하여 
+Django와 MySQL을 연동시켰다.
 
 ```python
 import pymysql
