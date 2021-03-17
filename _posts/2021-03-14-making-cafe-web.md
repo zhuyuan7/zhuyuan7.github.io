@@ -51,6 +51,58 @@ Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://
 
 
 <br>
+강의를 참고하여 Django는 다음과 같은 순으로 만들었다.
+
+
+```
+1) pythonmanage.pymigrate
+
+2) 슈퍼유저생성
+Python manage.py create superuser
+username:admin
+password:1234
+
+3) 애플리케이션생성
+Python manage.py start appaddress
+Address 관련 디렉토리가 만들어진다.
+
+4) settings디렉토리(파일)로가서
+	INSTALLED_APPS=[
+	'address']추가//
+	언어설정LANGUAGE_CODE='ko'
+	시간설정TIME_ZONE='Asia/Seoul'
+
+
+5) models디렉토리로가서idx,name,tel,email,address설정
+	classAddress(models.Model):
+	#자동증가필드,기본키
+	idx=models.AutoField(primary_key=True)
+	#idx는필드명AutoField는자동증가
+	#primary_key 중복되지 않늗다.
+	#최대사이즈50,빈값허용,null허용
+	name=models.CharField(max_length=50,blank=True,null=True)
+	tel=models.CharField(max_length=50,blank=True,null=True)
+	email=models.CharField(max_length=50,blank=True,null=True)
+	address=models.CharField(max_length=500,blank=True,null=True)
+
+6) admin디렉토리로가서
+	Admin사이트에테이블반영
+	classAddressAdmin(admin.ModelAdmin):
+		list_display=('name','tel','email','address')
+	admin.site.register(Address,AddressAdmin)
+
+7) 데이터베이스변경사항반영
+	Python manage.py makemigrations
+	Python manage.py migrate
+
+8) 웹서버구동
+	Python manage.py runserver localhost:80
+
+```
+<br>
+
+
+<br>
 ```python
 Microsoft Windows [Version 10.0.19041.867]
 (c) 2020 Microsoft Corporation. All rights reserved.
@@ -136,3 +188,5 @@ pymysql.install_as_MySQLdb()
 ```
 <br>
 
+
+<br>
