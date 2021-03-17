@@ -96,7 +96,7 @@ Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://
 	Python manage.py migrate
 
 8) 웹서버구동
-	Python manage.py runserver localhost:80
+	Python manage.py runserver 
 
 ```
 <br>
