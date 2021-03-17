@@ -20,14 +20,14 @@ tags:
 ---
 <br>
 **2020-10-21**부터 **2020-12-28**까지 진행했던 **[서울시 25개구 카페추천 웹페이지 만들기](https://zhuyuan7.github.io/project/)** 팀프로젝트 개발에 대한 포스팅이다.
-이 글에서는 Django 이용 웹페이지 구축 과정을 소개한다.
+이 글에서는 Django Web framework와 MySQL Database Service를 활용한 웹페이지 구축 과정을 소개한다.
 <br>
 
 -----
 
 <br>
 
-# 1. Django  이용 웹페이지 구축
+# 1. Django Web framework  
 
 길고 긴 데이터 마이닝과 텍스트 마이닝 과정을 완료하고 이제 진짜 마지막 단계인 웹페이지 구축단계가 시작됐다.
 (내가 하다하다 Django까지 손을 댈 줄이야... ) 
@@ -69,3 +69,11 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 
 ```
+
+# 2. MySQL Database Service 
+
+> MySQL Database Service란?  
+  개발자가 세계에서 가장 널리 사용되는 오픈 소스 데이터베이스를 사용하여 
+  안전한 클라우드 네이티브 애플리케이션을 빠르게 개발하고 배포할 수 있도록
+  하는 완전 관리형 데이터베이스 서비스입니다.  
+  - 출처:[오라클](https://www.oracle.com/kr/mysql/)
