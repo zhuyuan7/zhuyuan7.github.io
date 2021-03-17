@@ -69,7 +69,10 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 
 ```
+<br>
 
+
+<br>
 # 2. MySQL Database Service 
 
 Django를 설치하면 기본적으로 SQLite로 연동되어있지만, 우리 팀은 **MySQL**을 사용하기로 했다.
@@ -131,3 +134,4 @@ import pymysql
 pymysql.version_info = (1, 4, 13, "final", 0)
 pymysql.install_as_MySQLdb()
 ```
+
