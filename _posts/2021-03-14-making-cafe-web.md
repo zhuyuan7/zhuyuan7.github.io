@@ -56,25 +56,31 @@ Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://
 
 
 ```
-1) pythonmanage.pymigrate
+pip install django
 
-2) 슈퍼유저생성
+1) 애플리케이션 생성
+  django-admin startproject config .
+
+2) 기본테이블 생성 
+  python manage.py migrate
+
+3) 슈퍼유저생성
   Python manage.py create superuser
   username:admin
   password:1234
 
-3) 애플리케이션생성
-  Python manage.py start appaddress
+4) 애플리케이션 생성
+  Python manage.py startapp address
   Address 관련 디렉토리가 만들어진다.
 
-4) settings디렉토리(파일)로가서
+5) settings디렉토리(파일)로가서
 	INSTALLED_APPS=[
 	'address']추가//
 	언어설정LANGUAGE_CODE='ko'
 	시간설정TIME_ZONE='Asia/Seoul'
 
 
-5) models디렉토리로가서idx,name,tel,email,address설정
+6) models디렉토리로가서idx,name,tel,email,address설정
 	classAddress(models.Model):
 	#자동증가필드,기본키
 	idx=models.AutoField(primary_key=True)
@@ -86,17 +92,17 @@ Django는 한번도 접해본 적이 없어서 유튜브의 [BIPA SORI](https://
 	email=models.CharField(max_length=50,blank=True,null=True)
 	address=models.CharField(max_length=500,blank=True,null=True)
 
-6) admin디렉토리로가서
+7) admin디렉토리로가서
 	Admin사이트에테이블반영
 	classAddressAdmin(admin.ModelAdmin):
 		list_display=('name','tel','email','address')
 	admin.site.register(Address,AddressAdmin)
 
-7) 데이터베이스변경사항반영
+8) 데이터베이스변경사항반영
 	Python manage.py makemigrations
 	Python manage.py migrate
 
-8) 웹서버구동
+9) 웹서버구동
 	Python manage.py runserver 
 
 ```
