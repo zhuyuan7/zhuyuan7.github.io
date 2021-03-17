@@ -99,7 +99,7 @@ Django를 설치하면 기본적으로 SQLite로 연동되어있지만, 우리 �
 # 3. Django - MySQL 연동
 
 Django의 데이터베이스 기본값인 SQLlite에서 MySQL로 바꾸기 위해 
-'config.settings'의 내용을 수정하여 Django와 MySQL을 연동시켰다.
+'config/settings'의 내용을 수정하여 Django와 MySQL을 연동시켰다.
 
 ```python
 import pymysql
