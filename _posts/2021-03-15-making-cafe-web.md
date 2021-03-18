@@ -474,7 +474,7 @@ Django info_tbl과 review_tbl을 확인하였고,
 다음과 같이 해당 테이블에 모든 데이터가 잘 적재되있는 것을 확인 할 수 있었다.
 
 
-![인포어드민](https://zhuyuan7.github.io/assets/images/인포어드민.jpg "인포어드민"){: .align-center}
+![정보어드민](https://zhuyuan7.github.io/assets/images/정보어드민.jpg "정보어드민"){: .align-center}
 <center> <그림 6> Django Info tbls  </center>
 <br>
 
