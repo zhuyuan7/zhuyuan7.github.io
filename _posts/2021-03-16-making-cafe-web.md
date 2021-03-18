@@ -142,29 +142,32 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 먼저  [**var win = window.open()**](https://www.w3schools.com/jsref/met_win_open.asp)을 
 이용하여 팝업창을 만들었다. 
 
+`var win = window.open("cafe_theme?gu_name="+area.name+"&gu_code="+area.id,`
 
-`  var areas = [
+또한 [The GET Method](https://www.w3schools.com/tags/ref_httpmethods.asp)
+의 **query string (name/value pairs)** 형식을 이용해 cafe_theme를 실행할 때 두 개의 
+입력데이터 gu_name=area.name('강남구')와 gu_code=area.id('GN')을 가지고 실행하라는 코드를 설정하였다.
+
+
+` 참고 코드 :    
+var areas = [
       {
           id:"GN",
           name : '강남구',
           path : [
 `
 
-
-또한 [The GET Method](https://www.w3schools.com/tags/ref_httpmethods.asp)
-의 **query string (name/value pairs)** 형식을 이용해 cafe_theme를 실행할 때 두 개의 
-입력데이터 gu_name=area.name('강남구')와 gu_code=area.id('GN')을 가지고 실행하라는 코드를 설정하였다.
-
-`var win = window.open("cafe_theme?gu_name="+area.name+"&gu_code="+area.id,`
-
-
 쿼리스트링에 주어진 데이터를 request 라이브러리의 get 메소드를 이용하여 요청한 데이터를
-가져온다.
+가져올 수 있게 해놓았다.
 
 ```python
 def cafe0_dessert(request):
     GU_CODE = request.GET['gu_code']
 ```
+<br>
+
+
+<br>
 
 
 ```python
