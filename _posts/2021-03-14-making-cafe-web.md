@@ -181,7 +181,8 @@ DATABASES = {
 Django - MySQL 연동 시 다음과 같은 에러가 발생하였다. 
 
 ```python
-django.core.exceptions.ImproperlyConfigured: mysqlclient 1.4.0 or newer is required; you have 0.10.1.
+django.core.exceptions.ImproperlyConfigured: mysqlclient 1.4.0 or newer is required;
+you have 0.10.1.
 ```
 <br>
 
