@@ -3,6 +3,9 @@ title:  "(9) 서울 카페 추천 웹사이트 만들기 - 카페 추천 웹페�
 excerpt: "이용자의 카페 이용 목적에 맞춘 웹페이지 구현 완성물 "
 permalink: "/blog/making-cafe-web-09/"
 author_profile: true
+header:
+       teaser: /assets/images/한국소피아.jpg
+
 
 categories:
   - 카페 추천
