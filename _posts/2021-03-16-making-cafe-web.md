@@ -163,7 +163,9 @@ var areas = [
 
 
 쿼리스트링에 주어진 데이터를 request 라이브러리의 get 메소드를 이용하여 요청한 데이터를
-가져올 수 있게 해놓았다.
+가져올 수 있게 해놓았다.  
+(출처 : https://ysoh.tistory.com/entry/Query-String)
+
 
 ```python
 # view.py
