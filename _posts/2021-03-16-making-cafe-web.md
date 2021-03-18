@@ -16,7 +16,8 @@ tags:
   - 웹사이트
   - 카카오맵 API
   - API
-  - 크롤링
+  - 팝업창
+  - 지도
   - 정보
 #{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 ---
@@ -116,7 +117,7 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 
 
 ![구지도](https://zhuyuan7.github.io/assets/images/구지도.jpg "구지도"){: .align-center}
-<center> <그림 1> 서울시 25개 "구" 지도 구현 </center>
+<center> <그림 2> 서울시 25개 "구" 지도 구현 </center>
 <br>
 
 
@@ -124,8 +125,15 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 
 # 2. 이용 목적 테마 팝업창 만들기
 
-지도도 만들었으니 이제 남은 건 카페 이용 목적 테마 팝업창을 만들기만 하면 된다.  
+지도도 만들었으니 이제 남은 건 카페 이용 목적 테마를 선택할 수 있는 팝업창을 만들기만 하면 된다.
 
+
+![팝업창](https://zhuyuan7.github.io/assets/images/팝업창.jpg "팝업창"){: .align-center}
+<center> <그림 3> 이용 목적 테마 팝업창 시안 </center>
+<br>
+
+
+<br>
 팝업창은 [**var win = window.open()**](https://www.w3schools.com/jsref/met_win_open.asp)을 
 이용하여 만들었다. 
 
@@ -143,8 +151,13 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
         win.setMap(map);
 
 ```
-
-
-![팝업창](https://zhuyuan7.github.io/assets/images/팝업창.jpg "팝업창"){: .align-center}
-<center> <그림 1> 이용 목적 테마 팝업창 시안 </center>
 <br>
+
+
+<br>
+이렇게 해서 "구"지도 구현에 이어, 테마선택 팝업창 구현도 완성하였다. 
+
+![팝업](https://zhuyuan7.github.io/assets/images/팝업.jpg "팝업"){: .align-center}
+<center> <그림 4> 이용 목적 테마 팝업창 </center>
+<br>
+
