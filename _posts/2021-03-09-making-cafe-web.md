@@ -7,7 +7,7 @@ toc: true
 toc_sticky: true
 # toc_label: "페이지 주요 목차"  --toc의 기본값은 "on this page"
 header:
-  teaser: /assets/images/아이디어.jpg
+       teaser: /assets/images/아이디어.jpg
 
 
 categories:
