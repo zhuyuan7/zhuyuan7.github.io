@@ -95,7 +95,7 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
           ]
       }
   ]```
- 
+ `
 
 
 
@@ -121,8 +121,8 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 
 # 2. 이용 목적 테마 팝업창 만들기
 
-지도도 만들었으니 이제 남은 건 카페 이용 목적 테마 선택창을 만들기만 하면 된다. 
-var win = window.open
+지도도 만들었으니 이제 남은 건 카페 이용 목적 테마 팝업창을 만들기만 하면 된다. 
+팝업창은 [var win = window.open()](https://www.w3schools.com/jsref/met_win_open.asp)을 이용하여 만들었다. 
 
 ```python
     kakao.maps.event.addListener(polygon, 'click', function(mouseEvent) {
@@ -138,7 +138,7 @@ var win = window.open
         win.setMap(map);
 
 ```
-
+``
 
 ![팝업창](https://zhuyuan7.github.io/assets/images/팝업창.jpg "팝업창"){: .align-center}
 <center> <그림 1> 이용 목적 테마 팝업창 시안 </center>
