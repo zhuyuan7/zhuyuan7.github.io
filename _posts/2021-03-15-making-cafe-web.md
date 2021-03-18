@@ -97,7 +97,7 @@ csv 파일을 적재할 수 있다.
 
 
 <br>
-# 2. 기존 데이터베이스 Django에 연동
+## 2. 기존 데이터베이스 Django에 연동
 
 이용자가 웹페이지 상에서 서울시 특정**'구'**를 선택하고 10가지 카페 이용 목적 **'테마'**를 선택하면 
 이 조건에 해당되는 데이터들을 제공하기 위해, **기존 데이터베이스**를 **Django**에 연동시켰다.
@@ -119,11 +119,6 @@ python manage.py inspectdb
 
 이 한줄이면 MySQL에 적재한 모든 데이터가 한번에 Django안으로 쏙~! 들어간다.
 진짜 신기했다!!!
-
-
-![디비](https://zhuyuan7.github.io/assets/images/디비.jpg "디비"){: .align-center}
-<center> <그림 6> 기존 데이터베이스 Django에 연동 </center>
-<br>
 
 
 <br>
