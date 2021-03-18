@@ -96,6 +96,7 @@ tags:
 
 
 <br>
+
 또한 각 형태소 분석기의 문자 개수를 늘려감에 따라 모든 클래스의 실행 시간은 기하급수적으로 증가하는 것을 알 수 있다.
   ![코엔엘성능비교](https://zhuyuan7.github.io/assets/images/코엔엘성능비교.jpg "코엔엘성능비교"){: .align-center}<center> <그림 1> 형태소 분석기 실행시간 </center>  
      - 출처 : [KoNLPy](https://konlpy.org/ko/v0.4.3/morph/#pos-tagging-with-konlpy)
@@ -104,6 +105,7 @@ tags:
 
 
 <br>
+
 본래 적용하려던 형태소 분석기는 **은전한닢**으로, 은전한닢의 로딩시간과 실행시간이 가장 효율적이라 적용하려 하였으나, 
 윈도우에서 지원이 되지않아 사용하지 못했다.  
 
@@ -126,7 +128,7 @@ df=pd.read_csv('/content/drive/MyDrive/Colab Notebooks/Count_cafe/25.JL .csv', e
 print(df)
 ```
 <br>
------
+---
 
 
 <br>
@@ -135,6 +137,7 @@ print(df)
 카페의 특성을 파악하기 위해, 카페 이용후기 자연어 처리 과정을 거쳐
 명사만 추출하고, 그 빈도를 계산한 후에 최빈도수 상위 20개 단어를 추출하였다.
 
+<br>
 
 ### 2.1. twitter.nouns()
 빈도수 분석을 하기에 앞서, Okt를 적용하여 명사단위로 분리하고 추출하였다.
