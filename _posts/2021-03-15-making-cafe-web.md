@@ -75,12 +75,16 @@ MySQL DB에 적재했다.
 
 ![테이블](https://zhuyuan7.github.io/assets/images/테이블.jpg "테이블"){: .align-center}
 <center> <그림 3> 테이블 데이터 적재 </center>
+<br>
+
 
 <br>
 다음과 같은 순으로 테이블 데이터를 적재하였다.
 
 ![적재](https://zhuyuan7.github.io/assets/images/적재.jpg "적재"){: .align-center}
 <center> <그림 4>  데이터 적재 순서 </center>
+<br>
+
 
 <br>
 위 순서대로 테이블 데이터 적재 작업을 진행하면 다음과 같이 컴퓨터에 보유하고 있던 
