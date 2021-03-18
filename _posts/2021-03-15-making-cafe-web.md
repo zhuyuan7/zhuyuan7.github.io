@@ -44,9 +44,22 @@ tags:
 
 
 <br>
+### 1.1. 테이블 생성
 
-카페 정보 테이블을 **info_tbl**로, 카페 이용 후기 핵심어 최빈도수 테이블을 **review_tbl**로 명명하였다.
+카페 정보 테이블은 **info_tbl**로, 카페 이용 후기 핵심어 최빈도수 테이블은 **review_tbl**로 명명하였다.
 
 info_tbl의 **'gu','id'**를 primary키로 설정하여 review_tbl에서 해당하는 데이터를 찾을 수 있도록 하였고,
-review_tbl은 info_tbl의 'gu'와 'id'의 primary키와 충돌되지 않도록 seq'를 Auto-Increment로 추가하여 
+review_tbl은 info_tbl의 'gu'와 'id'의 primary키와 충돌되지 않도록 'seq'를 Auto-Increment로 추가하여 
 primary키로 설정하였다. 
+
+![정보데이터](https://zhuyuan7.github.io/assets/images/정보데이터.jpg "정보데이터"){: .align-center}
+<center> <그림 1> 카페 정보 테이블 속성 </center>
+
+
+![빈도수데이터](https://zhuyuan7.github.io/assets/images/빈도수데이터.jpg "빈도수데이터"){: align=center}
+<center> <그림 2> 핵심어 최빈도수 테이블 속성 </center>
+
+<br>
+
+
+<br>
