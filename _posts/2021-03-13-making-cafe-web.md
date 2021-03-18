@@ -3,6 +3,8 @@ title:  "(5) 서울 카페 추천 웹사이트 만들기 - 결과값에 대한 �
 excerpt: "카페 댓글 빈도수 분석 데이터 기반 카페 요소 분석 및 분류"
 permalink: "/blog/making-cafe-web-05/"
 author_profile: true
+header:
+       teaser: /assets/images/팝업.jpg
 toc: true
 toc_sticky: true
 

@@ -3,6 +3,8 @@ title:  "(3) 서울 카페 추천 웹사이트 만들기 - 구글맵 카페 댓�
 excerpt: "구글맵 이용 카페 댓글 크롤링"
 permalink: "/blog/making-cafe-web-03/"
 author_profile: true
+header:
+       teaser: /assets/images/구글맵.jpg
 toc: true
 toc_sticky: true
 # toc_label: "페이지 주요 목차"  --toc의 기본값은 "on this page"

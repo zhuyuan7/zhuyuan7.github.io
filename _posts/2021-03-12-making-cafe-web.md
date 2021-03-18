@@ -3,6 +3,8 @@ title:  "(4) 서울 카페 추천 웹페이지 만들기 - 카페 이용후기�
 excerpt: "Okt 이용 카페 이용후기 빈도수 분석"
 permalink: "/blog/making-cafe-web-04/"
 author_profile: true
+header:
+       teaser: /assets/images/워드클라우드.jpg
 toc: true
 toc_sticky: true
 # toc_label: "페이지 주요 목차"  --toc의 기본값은 "on this page"

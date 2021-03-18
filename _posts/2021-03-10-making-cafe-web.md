@@ -3,6 +3,8 @@ title:  "(2) 서울 카페 추천 웹페이지 만들기 - 카카오맵 카페 �
 excerpt: "카카오맵 이용 카페 정보 크롤링"
 permalink: "/blog/making-cafe-web-02/"
 author_profile: true
+header:
+       teaser: /assets/images/카카오맵.jpg
 toc: true
 toc_sticky: true
 # toc_label: "페이지 주요 목차"  --toc의 기본값은 "on this page"

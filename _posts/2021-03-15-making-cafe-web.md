@@ -3,6 +3,8 @@ title:  "(7) 서울 카페 추천 웹사이트 만들기 - MySQL 카페 데이�
 excerpt: "MySQL 이용 카페 데이터 파일 적재"
 permalink: "/blog/making-cafe-web-07/"
 author_profile: true
+header:
+       teaser: /assets/images/워크벤치.jpg
 toc: true
 toc_sticky: true
 

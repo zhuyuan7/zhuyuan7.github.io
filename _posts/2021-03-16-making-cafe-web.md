@@ -1,8 +1,10 @@
 ---
-title:  "(8) 서울 카페 추천 웹사이트 만들기 - 카카오맵 API이용 한 서울시 25개 구 지도 구현"
-excerpt: "카카오맵 이용 카페 정보 크롤링"
+title:  "(8) 서울 카페 추천 웹사이트 만들기 - 카카오맵 API이용 지도 구현 및 테마 팝업창 "
+excerpt: "카카오맵 API이용 서울시 25개 구 지도 구현 및 카페 이용 목적 테마 팝업창 생성 "
 permalink: "/blog/making-cafe-web-08/"
 author_profile: true
+header:
+       teaser: /assets/images/구지도.jpg
 toc: true
 toc_sticky: true
 

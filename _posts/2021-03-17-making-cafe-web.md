@@ -5,6 +5,8 @@ permalink: "/blog/making-cafe-web-09/"
 author_profile: true
 header:
        teaser: /assets/images/한국소피아.jpg
+toc: true
+toc_sticky: true
 
 
 categories:
