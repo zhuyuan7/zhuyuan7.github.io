@@ -57,6 +57,7 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 >"구" 단위의 좌표값
 
 ```python
+# main.html
 <script>
   // 지도에 폴리곤으로 표시할 영역데이터 배열입니다 
   var areas = [
@@ -135,7 +136,7 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 
 <br>
 
-이용자가 테마 팝업창의 특정 테마를 클릭하면 이용자가 설정한 "구"+"테마"조건에 해당하는 정보를 
+이용자가 테마 팝업창의 특정 테마를 클릭하면, 이용자가 설정한 "구"+"테마"조건에 해당하는 정보를 
 제공하는 창으로 넘어가도록 만들었다.
 
 
@@ -161,6 +162,8 @@ var areas = [
 가져올 수 있게 해놓았다.
 
 ```python
+# view.py
+
 def cafe0_dessert(request):
     GU_CODE = request.GET['gu_code']
 ```
@@ -169,8 +172,10 @@ def cafe0_dessert(request):
 
 <br>
 
-
+카페 이용목적 테마 팝업창 코드는 다음과 같다.
 ```python
+# main.html
+
     kakao.maps.event.addListener(polygon, 'click', function(mouseEvent) {
         //다음 페이지에 GET방식으로 파라미터를 전달 gu_name, gu_code를 cafe_theme에 전달햇음.
         // url?key1=value1&key2=value2
@@ -196,34 +201,3 @@ def cafe0_dessert(request):
 
 
 <br>
-# 3. 각 테마에 
-def cafe_theme(request):
-    return render(request, 'survey/cafe_theme.html')
-
-
-def cafe0_dessert(request):
-    GU_CODE = request.GET['gu_code']
-    lst = ReviewTbl.objects.raw('''select current_timestamp as seq, info_tbl.gu, info_tbl.id, info_tbl.name, info_tbl.tel, info_tbl.addr, info_tbl.hour, info_tbl.photo, max(review_tbl.tf) as max_tf
-                                        from review_tbl join info_tbl
-                                        on review_tbl.gu = info_tbl.gu and info_tbl.id = review_tbl.id
-                                        where (review_tbl.keyword ='디저트' or keyword='케이크' or keyword ='빙수' or keyword='케익' or keyword='번' or keyword='와플'
-                                        or keyword='스콘' or keyword='팬케이크' or keyword='샐러드' or keyword= '베이글') and review_tbl.gu = '{}'
-                                        group by info_tbl.gu, info_tbl.id, info_tbl.name, info_tbl.tel, info_tbl.addr, info_tbl.hour, info_tbl.photo
-                                        order by max_tf desc
-                                        '''.format(GU_CODE))
-
-
-    item_list = []
-    for item in lst:
-        arg = {}
-        arg['name'] = item.name
-        arg['addr'] = item.addr
-        arg['tel'] = item.tel
-        arg['hour'] = item.hour
-
-        item_list.append(arg)
-    # html에 렌더
-
-    args = {'lst': item_list}
-
-    return render(request, "survey/cafe0_desert.html", args)
