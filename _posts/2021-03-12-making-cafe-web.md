@@ -46,6 +46,8 @@ tags:
 <br>
 
 
+
+
 <br>
 ### 1.1. 자연어 처리 (Natural Language Processing)
 
@@ -73,6 +75,7 @@ tags:
 <br>
 
 
+
 <br>
 ### 1.2. 왜 Okt 형태소 분석기를 선택했는 가?
 
@@ -91,10 +94,13 @@ tags:
 | 꼬꼬마 | 5.6988 | 35.7163 |
 
 
+
 <br>
 또한 각 형태소 분석기의 문자 개수를 늘려감에 따라 모든 클래스의 실행 시간은 기하급수적으로 증가하는 것을 알 수 있다.
   ![코엔엘성능비교](https://zhuyuan7.github.io/assets/images/코엔엘성능비교.jpg "코엔엘성능비교"){: .align-center}<center> <그림 1> 형태소 분석기 실행시간 </center>  
      - 출처 : [KoNLPy](https://konlpy.org/ko/v0.4.3/morph/#pos-tagging-with-konlpy)
+
+
 
 
 <br>
@@ -120,8 +126,8 @@ df=pd.read_csv('/content/drive/MyDrive/Colab Notebooks/Count_cafe/25.JL .csv', e
 print(df)
 ```
 <br>
-
 -----
+
 
 <br>
 
@@ -203,13 +209,14 @@ if __name__ == '__main__':
 <br>
 
 
+
 물론, 이 경우도 마찬가지로 하나의 '핵심어'에 식별자('GU'+'ID')를 부여하여
 어떤 카페의 핵심어인지 판별할 수 있게 설정하였다.
 
 ![빈도수결과](https://zhuyuan7.github.io/assets/images/빈도수결과.jpg "빈도수결과"){: .align-center}<center> <그림 2> 자연어처리 및 빈도수 분석 결과 </center>
 
-
 <br>
+
 
 
 ### 2.3. 워드클라우드
@@ -217,6 +224,7 @@ if __name__ == '__main__':
 카페의 특성을 알 수 있는 데이터를 확보하였고, 이 데이터의 결과를 직관적으로 
 파악할 수 있게 워드클라우드로 표현하였다.
 
+<br>
 > **워드클라우드**란?  
   - 텍스트에 담겨 있는 여러 단어들의 등장 빈도를 가장 직관적으로 시각화하는 방법이다.
   - 빈도수 높을 수록 큰 글자, 낮을 수록 작은 글자로 표현된다.
