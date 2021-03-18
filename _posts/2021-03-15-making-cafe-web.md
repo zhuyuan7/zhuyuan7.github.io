@@ -22,6 +22,8 @@ tags:
 ---
 <br>
 **2020-10-21**부터 **2020-12-28**까지 진행했던 **[서울시 25개구 카페추천 웹페이지 만들기](https://zhuyuan7.github.io/project/)** 팀프로젝트 개발에 대한 포스팅이다.
+
+
 이 글에서는 MySQL 데이터 파일 적재를 활용한 웹페이지 구축 과정을 소개한다.
 <br>
 
@@ -48,8 +50,7 @@ tags:
 카페 정보 테이블은 **info_tbl**로, 카페 이용 후기 핵심어 최빈도수 테이블은 **review_tbl**로 명명하였다.
 
 **info_tbl**의 **'gu','id'**를 primary키로 설정하여 review_tbl에서 해당하는 데이터를 찾을 수 있도록 하였고,
-**review_tbl**은 info_tbl의 'gu'와 'id'의 primary키와 충돌되지 않도록 **'seq'**를 Auto-Increment로 추가하여 
-primary키로 설정하였다. 
+ 
 
 ![정보데이터](https://zhuyuan7.github.io/assets/images/정보데이터.jpg "정보데이터"){: .align-center}
 <center> <그림 1> 카페 정보 테이블 속성 </center>
@@ -57,6 +58,9 @@ primary키로 설정하였다.
 
 
 <br>
+**review_tbl**은 info_tbl의 'gu'와 'id'의 primary키와 충돌되지 않도록 **'seq'**를 Auto-Increment로 추가하여 
+primary키로 설정하였다.
+
 ![빈도수데이터](https://zhuyuan7.github.io/assets/images/빈도수데이터.jpg "빈도수데이터"){: align=center}
 <center> <그림 2> 핵심어 최빈도수 테이블 속성 </center>
 
