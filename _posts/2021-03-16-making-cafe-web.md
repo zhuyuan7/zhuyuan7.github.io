@@ -130,7 +130,9 @@ var win = window.open
         // url?key1=value1&key2=value2
         // cafe_theme?gu_name=용산구&gu_code=YS
 
-        var win = window.open("cafe_theme?gu_name="+area.name+"&gu_code="+area.id, "_blank", "toolbar=yes,oncontextmenu=no, scrollbars=yes,location=no, resizable=yes,top=500,left=500,width=500,height=500");
+        var win = window.open("cafe_theme?gu_name="+area.name+"&gu_code="+area.id,
+        "_blank", "toolbar=yes,oncontextmenu=no, scrollbars=yes,location=no, 
+        resizable=yes,top=500,left=500,width=500,height=500");
         win.setContent(content);
         win.setPosition(mouseEvent);
         win.setMap(map);
