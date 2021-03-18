@@ -90,8 +90,8 @@ MySQL DB에 적재했다.
 위 순서대로 테이블 데이터 적재 작업을 진행하면 다음과 같이 컴퓨터에 보유하고 있던 
 csv 파일을 적재할 수 있다.
 
-![임포트](https://zhuyuan7.github.io/assets/images/임포트.jpg "임포트"){: .align-center}
-<center> <그림 5> 임포트 결과 </center>
+![임폴트](https://zhuyuan7.github.io/assets/images/임폴트.jpg "임폴트"){: .align-center}
+<center> <그림 5> 임폴트 결과 </center>
 
 <br>
 
@@ -192,3 +192,25 @@ Django info_tbl과 review_tbl을 확인하였고,
 <br>
 
 
+<br>
+## 4. 카페 테마 SQL 쿼리문 작성
+
+앞서 [(5) 서울 카페 추천 웹사이트 만들기 - 결과값에 대한 카페 요소 분석 및 이용 목적 테마 분류 ](https://zhuyuan7.github.io/blog/making-cafe-web-05/)에서 
+설정한 10가지 카페 이용목적 테마를 선택하면 그 해당하는 값의 데이터가 제공되도록 SQL 쿼리문을 작성하였다.
+
+
+
+![쿼리](https://zhuyuan7.github.io/assets/images/쿼리.jpg "쿼리"){: .align-center}
+<center> <그림 8> 10가지 카페 이용목적 테마  </center>
+<br>
+
+
+<br>
+서울특별시 25개 **"구"**와 10가지 카페 이용목적 **"테마"**를 데이터를 기반으로 하여 
+쿼리문을 설정하였다. 
+
+만약 이용자가 "강남구"의 "디저트카페"를 선택한다면 다음과 같은 쿼리문으로 작성할 수 있다.
+
+![쿼리문](https://zhuyuan7.github.io/assets/images/쿼리문.jpg "쿼리문"){: .align-center}
+<center> <그림 9> "구"+"테마" 쿼리문  </center>
+<br>
