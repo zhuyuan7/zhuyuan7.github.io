@@ -110,9 +110,11 @@ Documentation을 참고해라!"**라고 하셨는 데!!!
 거기에 모든 사용설명서가 다있다. 
 
 
-내가 참고했던 문서는 [레거시 데이터베이스에 장고 연동하기](https://docs.djangoproject.com/ko/3.1/howto/legacy-databases/) 부분인데
+내가 참고했던 문서는 ["레거시 데이터베이스에 장고 연동하기"](https://docs.djangoproject.com/ko/3.1/howto/legacy-databases/) 부분인데
+
 ```pyhon
 python manage.py inspectdb
+
 ```
 
 이 한줄이면 MySQL에 적재한 모든 데이터가 한번에 Django안으로 쏙~! 들어간다.
