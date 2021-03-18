@@ -18,7 +18,7 @@ tags:
   - 구글맵
   - 크롤링
   - 정보
-#{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
+{{ page.date | date_to_xmlschema }}
 ---
 <br>
 

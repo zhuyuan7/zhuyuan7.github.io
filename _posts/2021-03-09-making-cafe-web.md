@@ -18,7 +18,7 @@ tags:
   - 맞춤
   - 추천
   - 웹페이지
-#last_modified_at: { page.last_modified_at }
+{{ page.date | date_to_xmlschema }}
 ---
 <br>
 

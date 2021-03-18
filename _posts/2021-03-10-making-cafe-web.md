@@ -20,7 +20,7 @@ tags:
   - 정보
   - Selenium
   - REST API
-#{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
+{{ page.date | date_to_xmlschema }}
 ---
 <br>
 
