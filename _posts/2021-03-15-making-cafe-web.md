@@ -47,8 +47,8 @@ Windows, Linux 및 Mac OS X에서 사용할 수 있습니다.
 
 카페 정보 테이블은 **info_tbl**로, 카페 이용 후기 핵심어 최빈도수 테이블은 **review_tbl**로 명명하였다.
 
-info_tbl의 **'gu','id'**를 primary키로 설정하여 review_tbl에서 해당하는 데이터를 찾을 수 있도록 하였고,
-review_tbl은 info_tbl의 'gu'와 'id'의 primary키와 충돌되지 않도록 'seq'를 Auto-Increment로 추가하여 
+**info_tbl**의 **'gu','id'**를 primary키로 설정하여 review_tbl에서 해당하는 데이터를 찾을 수 있도록 하였고,
+**review_tbl**은 info_tbl의 'gu'와 'id'의 primary키와 충돌되지 않도록 **'seq'**를 Auto-Increment로 추가하여 
 primary키로 설정하였다. 
 
 ![정보데이터](https://zhuyuan7.github.io/assets/images/정보데이터.jpg "정보데이터"){: .align-center}
