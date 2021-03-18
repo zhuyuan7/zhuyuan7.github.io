@@ -217,10 +217,14 @@ Django info_tbl과 review_tbl을 확인하였고,
 
 
 <br>
-작성한 쿼리문을 "view.py" 의 각 테마안에 입력해준다.
+카페 특성 요소를 10가지 카페 이용 목적 테마에 적합하도록 각 테마 함수에 쿼리문을 작성하여 
+이용자가 특정 테마를 선택하면 그에 해당하는 데이터를 제공할 수 있게 하였다.
 
 
 ```python
+
+# view.py 
+
 def cafe_theme(request):
     return render(request, 'survey/cafe_theme.html')
 
