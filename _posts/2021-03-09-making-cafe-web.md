@@ -18,7 +18,7 @@ tags:
   - 맞춤
   - 추천
   - 웹페이지
-{{ page.date | date_to_xmlschema }}
+#{{ page.date | date_to_xmlschema }}
 ---
 <br>
 

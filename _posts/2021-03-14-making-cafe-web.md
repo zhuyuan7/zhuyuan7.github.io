@@ -16,7 +16,7 @@ tags:
   - 웹페이지
   - Django
   - 정보
-{{ page.date | date_to_xmlschema }}
+#{{ page.date | date_to_xmlschema }}
 ---
 <br>
 **2020-10-21**부터 **2020-12-28**까지 진행했던 **[서울시 25개구 카페추천 웹페이지 만들기](https://zhuyuan7.github.io/project/)** 팀프로젝트 개발에 대한 포스팅이다.  
