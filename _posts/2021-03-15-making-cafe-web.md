@@ -214,3 +214,10 @@ Django info_tbl과 review_tbl을 확인하였고,
 ![쿼리문](https://zhuyuan7.github.io/assets/images/쿼리문.jpg "쿼리문"){: .align-center}
 <center> <그림 9> "구"+"테마" 쿼리문  </center>
 <br>
+
+
+<br>
+이렇게 쿼리문을 작성하여 이용자가 **"테마"**를 선택하기만 하면 해당 테마에 대한 
+카페 정보를 제공할 수 있도록 Django와 MySQL에서의 기본 설정을 완료하였다.
+ 
+
