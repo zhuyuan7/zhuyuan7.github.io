@@ -217,6 +217,48 @@ Django info_tbl과 review_tbl을 확인하였고,
 
 
 <br>
+작성한 쿼리문을 "view.py" 의 각 테마안에 입력해준다.
+
+
+```python
+def cafe_theme(request):
+    return render(request, 'survey/cafe_theme.html')
+
+
+def cafe0_dessert(request):
+    GU_CODE = request.GET['gu_code']
+    lst = ReviewTbl.objects.raw('''select current_timestamp as seq, info_tbl.gu, info_tbl.id, info_tbl.name, info_tbl.tel, info_tbl.addr, info_tbl.hour, info_tbl.photo, max(review_tbl.tf) as max_tf
+                                        from review_tbl join info_tbl
+                                        on review_tbl.gu = info_tbl.gu and info_tbl.id = review_tbl.id
+                                        where (review_tbl.keyword ='디저트' or keyword='케이크' or keyword ='빙수' or keyword='케익' or keyword='번' or keyword='와플'
+                                        or keyword='스콘' or keyword='팬케이크' or keyword='샐러드' or keyword= '베이글') and review_tbl.gu = '{}'
+                                        group by info_tbl.gu, info_tbl.id, info_tbl.name, info_tbl.tel, info_tbl.addr, info_tbl.hour, info_tbl.photo
+                                        order by max_tf desc
+                                        '''.format(GU_CODE))
+
+
+    item_list = []
+    for item in lst:
+        arg = {}
+        arg['name'] = item.name
+        arg['addr'] = item.addr
+        arg['tel'] = item.tel
+        arg['hour'] = item.hour
+
+        item_list.append(arg)
+    # html에 렌더
+
+    args = {'lst': item_list}
+
+    return render(request, "survey/cafe0_dessert.html", args)
+
+```
+<br>
+
+
+<br>
+
+
 이렇게 쿼리문을 작성하여 이용자가 **"구"**와 **"테마"**를 선택하기만 하면 해당 테마에 대한 
 카페 정보를 제공할 수 있도록 Django와 MySQL에서의 기본 설정을 완료하였다.
  

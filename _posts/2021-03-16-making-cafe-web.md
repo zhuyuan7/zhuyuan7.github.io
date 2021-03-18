@@ -139,17 +139,32 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 제공하는 창으로 넘어가도록 만들었다.
 
 
-팝업창은 [**var win = window.open()**](https://www.w3schools.com/jsref/met_win_open.asp)을 
-이용하여 만들었다. 또한 [The GET Method](https://www.w3schools.com/tags/ref_httpmethods.asp)의 
-** query string (name/value pairs)** 형식을 이용해 cafe_theme를 실행할 때 두 개의 
-입력데이터 gu_name=area.name과 gu_code=area.id를 가지고 실행하라는 코드를 설정하였다.
+먼저  [**var win = window.open()**](https://www.w3schools.com/jsref/met_win_open.asp)을 
+이용하여 팝업창을 만들었다. 
+
 
 `  var areas = [
       {
-          id:"YS",
-          name : '용산구',
+          id:"GN",
+          name : '강남구',
           path : [
 `
+
+
+또한 [The GET Method](https://www.w3schools.com/tags/ref_httpmethods.asp)
+의 **query string (name/value pairs)** 형식을 이용해 cafe_theme를 실행할 때 두 개의 
+입력데이터 gu_name=area.name('강남구')와 gu_code=area.id('GN')을 가지고 실행하라는 코드를 설정하였다.
+
+`var win = window.open("cafe_theme?gu_name="+area.name+"&gu_code="+area.id,`
+
+
+쿼리스트링에 주어진 데이터를 request 라이브러리의 get 메소드를 이용하여 요청한 데이터를
+가져온다.
+
+```python
+def cafe0_dessert(request):
+    GU_CODE = request.GET['gu_code']
+```
 
 
 ```python
@@ -176,3 +191,36 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 <center> <그림 4> 이용 목적 테마 팝업창 </center>
 <br>
 
+
+<br>
+# 3. 각 테마에 
+def cafe_theme(request):
+    return render(request, 'survey/cafe_theme.html')
+
+
+def cafe0_dessert(request):
+    GU_CODE = request.GET['gu_code']
+    lst = ReviewTbl.objects.raw('''select current_timestamp as seq, info_tbl.gu, info_tbl.id, info_tbl.name, info_tbl.tel, info_tbl.addr, info_tbl.hour, info_tbl.photo, max(review_tbl.tf) as max_tf
+                                        from review_tbl join info_tbl
+                                        on review_tbl.gu = info_tbl.gu and info_tbl.id = review_tbl.id
+                                        where (review_tbl.keyword ='디저트' or keyword='케이크' or keyword ='빙수' or keyword='케익' or keyword='번' or keyword='와플'
+                                        or keyword='스콘' or keyword='팬케이크' or keyword='샐러드' or keyword= '베이글') and review_tbl.gu = '{}'
+                                        group by info_tbl.gu, info_tbl.id, info_tbl.name, info_tbl.tel, info_tbl.addr, info_tbl.hour, info_tbl.photo
+                                        order by max_tf desc
+                                        '''.format(GU_CODE))
+
+
+    item_list = []
+    for item in lst:
+        arg = {}
+        arg['name'] = item.name
+        arg['addr'] = item.addr
+        arg['tel'] = item.tel
+        arg['hour'] = item.hour
+
+        item_list.append(arg)
+    # html에 렌더
+
+    args = {'lst': item_list}
+
+    return render(request, "survey/cafe0_desert.html", args)
