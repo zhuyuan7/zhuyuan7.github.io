@@ -34,11 +34,11 @@ tags:
 데이터 마이닝과 텍스트 마이닝 작업을 통해 추출한 카페 정보 데이터와 최빈도수 데이터들을 
 [MySQL Workbench](https://www.mysql.com/products/workbench/)를 이용하여 적재하였다.
 
-> MySQL Workbench란? 
-MySQL 워크벤치는 데이터베이스 설계자, 개발자 및 DBA를 위한 통합된 시각적 도구입니다.
-서버 구성, 사용자 관리, 백업 등을 위한 데이터 모델링, SQL 개발 및 포괄적인 관리 도구를 제공합니다.
-Windows, Linux 및 Mac OS X에서 사용할 수 있습니다.
-- 출처 : [mysql.com](https://www.mysql.com/products/workbench/)
+> MySQL Workbench란?  
+ MySQL 워크벤치는 데이터베이스 설계자, 개발자 및 DBA를 위한 통합된 시각적 도구입니다.
+ 서버 구성, 사용자 관리, 백업 등을 위한 데이터 모델링, SQL 개발 및 포괄적인 관리 도구를 제공합니다.
+ Windows, Linux 및 Mac OS X에서 사용할 수 있습니다.
+ - 출처 : [mysql.com](https://www.mysql.com/products/workbench/)
 <br>
 
 
