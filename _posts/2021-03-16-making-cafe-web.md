@@ -61,6 +61,7 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
   // 지도에 폴리곤으로 표시할 영역데이터 배열입니다 
   var areas = [
       {
+          id:"YS",
           name : '용산구',
           path : [
               new kakao.maps.LatLng(37.5548768201904, 126.96966524449994),
@@ -125,8 +126,7 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 
 # 2. 이용 목적 테마 팝업창 만들기
 
-지도도 만들었으니 이제 남은 건 카페 이용 목적 테마를 선택할 수 있는 팝업창을 만들기만 하면 된다.
-
+지도를 클릭하면 카페 이용 목적 테마를 선택할 수 있도록 하는 팝업창을 만들기만 하면된다.  
 
 ![팝업창](https://zhuyuan7.github.io/assets/images/팝업창.jpg "팝업창"){: .align-center}
 <center> <그림 3> 이용 목적 테마 팝업창 시안 </center>
@@ -134,8 +134,23 @@ API가 제공하는 좌표주소를 통해 "구"단위를 나누는 코드를 �
 
 
 <br>
+
+이용자가 테마 팝업창의 특정 테마를 클릭하면 이용자가 설정한 "구"+"테마"조건에 해당하는 정보를 
+제공하는 창으로 넘어가도록 만들었다.
+
+
 팝업창은 [**var win = window.open()**](https://www.w3schools.com/jsref/met_win_open.asp)을 
-이용하여 만들었다. 
+이용하여 만들었다. 또한 [The GET Method](https://www.w3schools.com/tags/ref_httpmethods.asp)의 
+** query string (name/value pairs)** 형식을 이용해 cafe_theme를 실행할 때 두 개의 
+입력데이터 gu_name=area.name과 gu_code=area.id를 가지고 실행하라는 코드를 설정하였다.
+
+`  var areas = [
+      {
+          id:"YS",
+          name : '용산구',
+          path : [
+`
+
 
 ```python
     kakao.maps.event.addListener(polygon, 'click', function(mouseEvent) {
