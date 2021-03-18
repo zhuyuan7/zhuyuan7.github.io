@@ -119,10 +119,6 @@ Microsoft Windows [Version 10.0.19041.867]
 Watching for file changes with StatReloader
 Performing system checks...
 
-2021-03-17 22:33:57.042673: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudart64_101.dll'; dlerror:
-cudart64_101.dll not found
-2021-03-17 22:33:57.044329: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your mac
-hine.
 System check identified no issues (0 silenced).
 March 17, 2021 - 22:34:03
 Django version 3.1.4, using settings 'config.settings'
