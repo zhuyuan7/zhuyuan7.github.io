@@ -231,17 +231,11 @@ def cafe0_dessert(request):
 
 
 <br>
-```python
-#cafe1_morning.html
 
-<tr>
-  <td><a href="https://map.kakao.com/link/search/{{morning_info.name}}">{{morning_info.name}}</a></td>
-   <td>{{morning_info.tel}}</td>
-   <td>{{morning_info.addr}}</td>
-   <td>{{morning_info.hour}}</td>
-</tr>
+![링크코드](https://zhuyuan7.github.io/assets/images/링크코드.jpg "링크코드"){: .align-center}
+<center> <그림 6> 선택카페 카카오맵 링크 코드 </center>
+<br>
 
-```
 <br>
 
 
