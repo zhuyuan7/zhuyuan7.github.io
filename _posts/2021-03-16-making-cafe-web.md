@@ -186,7 +186,7 @@ def cafe0_dessert(request):
 이렇게 해서 "구"지도 구현에 이어, 테마선택 팝업창 구현도 완성하였다. 
 
 ![팝업](https://zhuyuan7.github.io/assets/images/팝업.jpg "팝업"){: .align-center}
-<center> <그림 5> 이용 목적 테마 팝업창 </center>
+<center> <그림 4> 이용 목적 테마 팝업창 </center>
 <br>
 
 
@@ -226,7 +226,7 @@ def cafe0_dessert(request):
 
 
 ![링크](https://zhuyuan7.github.io/assets/images/링크.jpg "링크"){: .align-center}
-<center> <그림 6> "구"+"테마" 선택 카페 링크 설정 </center>
+<center> <그림 5> "구"+"테마" 선택 카페 링크 설정 </center>
 <br>
 
 
@@ -268,6 +268,6 @@ div class="container">
 이렇게 설정한 후, 해당 카페를 클릭하면 다음과 같이 카카오맵으로 바로 연결되도록 하였다.
 
 ![링크결과](https://zhuyuan7.github.io/assets/images/링크결과.jpg "링크결과"){: .align-center}
-<center> <그림 4> 선택카페 카카오맵 링크 결과 </center>
+<center> <그림 6> 선택카페 카카오맵 링크 결과 </center>
 <br>
 
