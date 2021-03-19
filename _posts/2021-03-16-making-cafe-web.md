@@ -244,6 +244,6 @@ cafe1_morning.html
 이렇게 설정한 후, 해당 카페를 클릭하면 다음과 같이 카카오맵으로 바로 연결되도록 하였다.
 
 ![링크결과](https://zhuyuan7.github.io/assets/images/링크결과.jpg "링크결과"){: .align-center}
-<center> <그림 6> 선택카페 카카오맵 링크 결과 </center>
+<center> <그림 7> 선택카페 카카오맵 링크 결과 </center>
 <br>
 
