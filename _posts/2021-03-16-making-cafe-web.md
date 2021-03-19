@@ -215,12 +215,59 @@ def cafe0_dessert(request):
 
 
 
-
 <br>
-# 4. "구"+"테마" 선택 카페 카카오맵에 연결하기 
+# 4. 선택 카페 카카오맵에 연결하기 
 
 마지막으로 이용자가 "구"+"테마"를 선택하면 해당 조건에 부합하는 카페에 대한 정보를 제공하는 데,
 단순 정보만 제공하는 것에만 그치지 않고, 
 
 카페 이름을 클릭하면 카카오맵으로 연결되어 카카오맵에서 해당 카페에 대한 페이지를 볼 수 있게 
 다음과 같이 설정하였다. 
+
+
+![링크](https://zhuyuan7.github.io/assets/images/링크.jpg "링크"){: .align-center}
+<center> <그림 4> "구"+"테마" 선택 카페 링크 설정 </center>
+<br>
+
+
+<br>
+```python
+
+div class="container">
+    <table class="talclass"
+        border="1"
+        width="400%"
+        height="200%"
+    >
+
+        <thead>
+        <tr align="left">
+            <td><B>카페</B></td>
+            <td><B>전화번호</B></td>
+            <td><B>주소</B></td>
+            <td><B>영업시간</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for morning_info in lst %}
+        <tr>
+            <td><a href="https://map.kakao.com/link/search/{{morning_info.name}}">{{morning_info.name}}</a></td>
+            <td>{{morning_info.tel}}</td>
+            <td>{{morning_info.addr}}</td>
+            <td>{{morning_info.hour}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+```
+<br>
+
+
+<br>
+
+이렇게 설정한 후, 해당 카페를 클릭하면 다음과 같이 카카오맵으로 바로 연결되도록 하였다.
+
+![링크결과](https://zhuyuan7.github.io/assets/images/링크결과.jpg "링크결과"){: .align-center}
+<center> <그림 4> 선택카페 카카오맵 링크 결과 </center>
+<br>
+
