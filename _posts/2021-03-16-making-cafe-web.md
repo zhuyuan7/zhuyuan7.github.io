@@ -235,10 +235,10 @@ def cafe0_dessert(request):
 #cafe1_morning.html
 
 <tr>
-    <td><a href="https://map.kakao.com/link/search/{{morning_info.name}}">{{morning_info.name}}</a></td>
-    <td>{{morning_info.tel}}</td>
-    <td>{{morning_info.addr}}</td>
-    <td>{{morning_info.hour}}</td>
+  <td><a href="https://map.kakao.com/link/search/{{morning_info.name}}">{{morning_info.name}}</a></td>
+   <td>{{morning_info.tel}}</td>
+   <td>{{morning_info.addr}}</td>
+   <td>{{morning_info.hour}}</td>
 </tr>
 
 ```
