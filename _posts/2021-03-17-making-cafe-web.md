@@ -34,4 +34,15 @@ tags:
 
 <br>
 
-# 1. 이용자가 선택한 ‘장소+취향’ 결과물 
+# 1.  카페 추천 웹페이지 완성물 
+
+7가지 프로젝트 구현단계를 진행해 만든 JOO의 첫 프로젝트 완성물이다.
+
+<iframe width="956" height="538" src="https://youtu.be/Wax5NI0JKuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+
+
+<br>
+
+# 2. 프로젝트 완성 소감
+
