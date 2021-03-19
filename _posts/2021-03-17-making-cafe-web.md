@@ -112,6 +112,11 @@ tags:
 
 
 
+![열정](https://zhuyuan7.github.io/assets/images/열정.jpg "열정"){: .align-center}<center> <그림 1> JOO_열정 </center>
+
+<br>
+
+
 
 
 
