@@ -38,8 +38,7 @@ tags:
 
 7가지 프로젝트 구현단계를 진행해 만든 JOO의 첫 프로젝트 완성물이다.
 
-[![Video Label](http://img.youtube.com/vi/Wax5NI0JKuM/0.jpg)](https://www.youtube.com/watch?v=Wax5NI0JKuM)<br>
-
+[![Video Label](http://img.youtube.com/vi/fr5SSoSgW8k/0.jpg)](https://www.youtube.com/watch?v=fr5SSoSgW8k)<br>
 
 <br>
 
