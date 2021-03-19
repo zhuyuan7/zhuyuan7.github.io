@@ -232,33 +232,15 @@ def cafe0_dessert(request):
 
 <br>
 ```python
+#cafe1_morning.html
 
-div class="container">
-    <table class="talclass"
-        border="1"
-        width="400%"
-        height="200%"
-    >
+<tr>
+    <td><a href="https://map.kakao.com/link/search/{{morning_info.name}}">{{morning_info.name}}</a></td>
+    <td>{{morning_info.tel}}</td>
+    <td>{{morning_info.addr}}</td>
+    <td>{{morning_info.hour}}</td>
+</tr>
 
-        <thead>
-        <tr align="left">
-            <td><B>카페</B></td>
-            <td><B>전화번호</B></td>
-            <td><B>주소</B></td>
-            <td><B>영업시간</B></td>
-        </tr>
-        </thead>
-        <tbody>
-        {% for morning_info in lst %}
-        <tr>
-            <td><a href="https://map.kakao.com/link/search/{{morning_info.name}}">{{morning_info.name}}</a></td>
-            <td>{{morning_info.tel}}</td>
-            <td>{{morning_info.addr}}</td>
-            <td>{{morning_info.hour}}</td>
-        </tr>
-        {% endfor %}
-        <tbody>
-    </table>
 ```
 <br>
 
