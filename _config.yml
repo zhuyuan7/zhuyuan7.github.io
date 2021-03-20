@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "존버 반, 열정 반 인문학 개발자"
+  name             : "존버 반, 열정 반 초보 개발자"
   avatar           : "/assets/images/JOO.jpg" #path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "비전공자의 ‘그렇게 개발자가 된다.’"
   location         : "South Korea"
