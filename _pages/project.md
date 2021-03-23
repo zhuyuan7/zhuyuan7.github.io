@@ -25,3 +25,4 @@ toc_sticky: true
 7.  [서울 카페 추천 웹페이지 만들기  -  MySQL 카페 데이터 파일 적재](https://zhuyuan7.github.io/blog/making-cafe-web-07/)
 8.  [서울 카페 추천 웹페이지 만들기  -  카카오맵 API이용 지도 구현 및 테마 팝업창 ](https://zhuyuan7.github.io/blog/making-cafe-web-08/)
 9.  [서울 카페 추천 웹페이지 만들기  -  카페 추천 웹페이지 완성물 ](https://zhuyuan7.github.io/blog/making-cafe-web-09/)
+10.  [서울 카페 추천 웹페이지 만들기  -  나의 연구 목표 ](https://zhuyuan7.github.io/blog/making-cafe-web-10/)
